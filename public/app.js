@@ -38,7 +38,10 @@ const savedNav = $('.saved-nav');
 const dialog = $('#recipe-dialog');
 const detail = $('#recipe-detail');
 const pageSize = 9;
-const state = { mode: 'healthy', method: '', savedOnly: false, limit: pageSize };
+const initialMethod = new URL(location.href).searchParams.get('method');
+const state = {
+  mode: 'healthy', method: methods.includes(initialMethod) ? initialMethod : '', savedOnly: false, limit: pageSize,
+};
 let recipes;
 let byId;
 let lastTrigger;
@@ -120,10 +123,18 @@ function refreshFilters() {
   render();
 }
 
+function setMethod(method) {
+  state.method = method;
+  const url = new URL(location.href);
+  if (method) url.searchParams.set('method', method);
+  else url.searchParams.delete('method');
+  history.replaceState(history.state, '', url);
+}
+
 function clearFilters() {
   query.value = '';
   region.value = '';
-  state.method = '';
+  setMethod('');
   refreshFilters();
 }
 
@@ -217,7 +228,7 @@ function setupEvents() {
   $('#methods').addEventListener('click', event => {
     const button = event.target.closest('[data-method-filter]');
     if (!button) return;
-    state.method = button.dataset.methodFilter;
+    setMethod(button.dataset.methodFilter);
     refreshFilters();
   });
   document.addEventListener('click', event => {

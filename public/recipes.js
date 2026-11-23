@@ -1,6 +1,17 @@
 export const methods = ['ต้ม', 'ผัด', 'ทอด', 'นึ่ง', 'ย่าง/อบ', 'สลัด/ยำ'];
 
 export const sources = {
+  liang: ['สถาบันโภชนาการ มหิดล · แกงเลียง', 'https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/%E0%B9%81%E0%B8%81%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B8%87.html'],
+  lanna: ['สำนักหอสมุด มช. · อาหารประเภทแกงของล้านนา', 'https://lannainfo.library.cmu.ac.th/lannafood/food-type/1'],
+  miyeok: ['Korea.net · มีย็อกกุก', 'https://www.korea.net/NewsFocus/Culture/view?articleId=144337'],
+  harira: ['Visit Morocco · ฮารีรา', 'https://www.visitmorocco.com/en/travel-info/food-drinks'],
+  kenchin: ['MAFF ญี่ปุ่น · เค็นจินจิรุ', 'https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/1056/index.html'],
+  imonoko: ['MAFF ญี่ปุ่น · อิโมโนโกะจิรุ', 'https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/3635/index.html'],
+  caldoverde: ['Visit Portugal · ซุปผักใบเขียว', 'https://www.visitportugal.com/en/content/mediterranean-diet'],
+  tlalpan: ['Mexico City · ซุปไก่ตลาเปญโญ', 'https://mexicocity.cdmx.gob.mx/e/delicias-chilangas/tlalpan-platillos-centenarios-con-aroma-a-lena/?lang=en'],
+  mercimek: ['GoTürkiye · ซุปถั่วเลนทิลตุรกี', 'https://goturkey.goturkiye.com/the-delicious-starters'],
+  fasolada: ['Visit Greece · ซุปถั่วขาวฟาโซลาดา', 'https://www.visitgreece.gr/en/experiences/architecture/traditional-settlements/fasolada-bean-soup'],
+  krupnik: ['กระทรวงเกษตรโปแลนด์ · ซุปบาร์เลย์เมืองนีวิสกา', 'https://www.gov.pl/attachment/2c107d51-721f-41d8-9cf5-f2fdb72edb08'],
   tom: ['UNESCO · ต้มยำกุ้ง', 'https://ich.unesco.org/en/RL/tomyum-kung-01879'],
   thai: ['Thailand.go.th · อาหารเด่นแต่ละภาค', 'https://thailand.go.th/public/issue-focus-detail/009-013'],
   mekong: ['ททท. · มรดกอาเซียนลุ่มน้ำโขง', 'https://tourismproduct.tourismthailand.org/wp-content/uploads/2023/01/ASEAN-HT_3_Mekong_Online-Spread144.pdf'],
@@ -26,6 +37,7 @@ export const sources = {
 export const illustrated = new Set([
   'tom-yum-goong', 'nam-prik-ong', 'bibimbap', 'pla-neung-manao', 'som-tam', 'miso-soup',
   'pho-ga', 'gazpacho', 'masoor-dal', 'black-bean-tacos', 'tod-mun', 'khao-soi',
+  'gaeng-liang', 'gaeng-jued-tofu', 'khao-tom-pla', 'gaeng-hed-isan', 'miyeokguk', 'harira',
 ]);
 
 export function normalize(text) {
