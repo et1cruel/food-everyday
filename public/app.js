@@ -86,6 +86,7 @@ function updateSavedDisplay() {
 }
 
 function render() {
+  if (!recipes) return;
   const words = normalize(query.value.trim()).split(/\s+/u).filter(Boolean);
   const selectedRegion = region.value;
   const matching = recipes.filter(recipe =>
@@ -150,6 +151,7 @@ function renderRecipe(recipe) {
 }
 
 function updateDialog() {
+  if (!byId) return;
   const id = new URL(location.href).searchParams.get('recipe');
   const recipe = byId.get(id);
   if (recipe) {
@@ -237,7 +239,7 @@ function setupEvents() {
       return;
     }
     const link = event.target.closest('a[href^="?recipe="]');
-    if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (!link || !byId || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     lastTrigger = link;
     const url = new URL(location.href);
@@ -253,13 +255,13 @@ function setupEvents() {
   window.addEventListener('popstate', updateDialog);
 }
 
+setupEvents();
 try {
   const response = await fetch(new URL('./recipes.txt', import.meta.url));
   if (!response.ok) throw new Error('Recipe collection unavailable');
   recipes = parseRecipes(await response.text());
   byId = new Map(recipes.map(recipe => [recipe.id, recipe]));
   addOptions();
-  setupEvents();
   render();
   updateDialog();
 } catch (error) {
