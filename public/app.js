@@ -64,11 +64,12 @@ function media(recipe, detailView = false) {
     '" loading="' + loading + '" decoding="async">';
 }
 
-function photoCredit(id) {
+function photoCredit(id, compact = false) {
   const photo = photoCredits.files[photoCredits.recipes[id]];
   const link = (href, label) => '<a href="' + escape(href) + '" target="_blank" rel="noopener noreferrer">' + escape(label) + '</a>';
   const license = photo.licenseUrl ? link(photo.licenseUrl, photo.license) : escape(photo.license);
-  return link(photo.source, photo.artist) + ' · ' + license + ' · ปรับขนาดและครอปเพื่อแสดงผล';
+  const credit = compact ? link(photo.source, photo.artist) : link(photo.source, photo.title) + ' · ' + escape(photo.artist);
+  return credit + ' · ' + license + ' · ปรับขนาดและครอปเพื่อแสดงผล';
 }
 
 function card(recipe) {
@@ -288,7 +289,7 @@ try {
   ]);
   if (!response.ok || !credits.ok) throw new Error('Recipe collection unavailable');
   photoCredits = await credits.json();
-  $('#hero-credit').innerHTML = photoCredit('tom-yum-goong');
+  $('#hero-credit').innerHTML = photoCredit('tom-yum-goong', true);
   recipes = parseRecipes(await response.text());
   byId = new Map(recipes.map(recipe => [recipe.id, recipe]));
   addOptions();
