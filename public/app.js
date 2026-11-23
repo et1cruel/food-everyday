@@ -1,4 +1,4 @@
-import { parseRecipes, normalize, methods, sources } from './recipes.js';
+import { parseRecipes, normalize, methods, sources, homeCollection } from './recipes.js';
 
 const icons = {
   leaf: '<path d="M20 4c-6 0-12 2-12 9a4 4 0 0 0 4 4c7 0 8-7 8-13Z M4 21l10-10"/>',
@@ -30,12 +30,13 @@ const savedNav = $('.saved-nav');
 const dialog = $('#recipe-dialog');
 const detail = $('#recipe-detail');
 const quickFilter = $('#quick-filter');
+const homeFilter = $('#home-collection');
 const pageSize = 9;
 const filters = new URL(location.href).searchParams;
 const initialMethod = filters.get('method');
 const state = {
   mode: 'healthy', method: methods.includes(initialMethod) ? initialMethod : '', quick: filters.get('quick') === '1',
-  savedOnly: false, limit: pageSize,
+  homeOnly: filters.get('collection') === homeCollection, savedOnly: false, limit: pageSize,
 };
 let recipes;
 let byId;
@@ -100,6 +101,7 @@ function render() {
     (state.savedOnly ? saved.has(recipe.id) : state.mode === 'all' || recipe.healthy) &&
     (!state.method || recipe.method === state.method) &&
     (!state.quick || recipe.minutes <= 20) &&
+    (!state.homeOnly || recipe.collection === homeCollection) &&
     (!selectedRegion || [recipe.country, recipe.region].includes(selectedRegion)) &&
     words.every(word => recipe.search.includes(word))
   );
@@ -109,11 +111,12 @@ function render() {
     '<p class="empty">' + (state.savedOnly && !saved.size
       ? 'แตะไอคอนบุ๊กมาร์กบนการ์ดสูตรเพื่อบันทึกเมนูโปรด'
       : 'ไม่พบเมนูที่ตรง ลองเปลี่ยนคำค้นหรือล้างตัวกรอง') + '</p>';
-  meter.textContent = (state.savedOnly ? 'รายการโปรด' : state.mode === 'healthy' ? 'เมนูสุขภาพ' : 'ทุกเมนู') +
+  meter.textContent = (state.savedOnly ? 'รายการโปรด' : state.homeOnly ? 'สูตรใหม่' : state.mode === 'healthy' ? 'เมนูสุขภาพ' : 'ทุกเมนู') +
     ' · ' + matching.length + ' เมนู' + (matching.length > pageSize ? ' · แสดง ' + Math.min(state.limit, matching.length) : '');
   more.hidden = matching.length <= state.limit;
-  reset.hidden = !words.length && !selectedRegion && !state.method && !state.quick;
+  reset.hidden = !words.length && !selectedRegion && !state.method && !state.quick && !state.homeOnly;
   quickFilter.setAttribute('aria-pressed', state.quick);
+  homeFilter.setAttribute('aria-pressed', state.homeOnly);
   for (const button of document.querySelectorAll('[data-mode]')) {
     button.setAttribute('aria-pressed', !state.savedOnly && button.dataset.mode === state.mode);
   }
@@ -134,6 +137,8 @@ function updateFilterUrl() {
   else url.searchParams.delete('method');
   if (state.quick) url.searchParams.set('quick', '1');
   else url.searchParams.delete('quick');
+  if (state.homeOnly) url.searchParams.set('collection', homeCollection);
+  else url.searchParams.delete('collection');
   history.replaceState(history.state, '', url);
 }
 
@@ -142,6 +147,7 @@ function clearFilters() {
   region.value = '';
   state.method = '';
   state.quick = false;
+  state.homeOnly = false;
   updateFilterUrl();
   refreshFilters();
 }
@@ -219,6 +225,12 @@ function setupEvents() {
   reset.addEventListener('click', clearFilters);
   quickFilter.addEventListener('click', () => {
     state.quick = !state.quick;
+    updateFilterUrl();
+    refreshFilters();
+  });
+  homeFilter.addEventListener('click', () => {
+    state.homeOnly = !state.homeOnly;
+    state.savedOnly = false;
     updateFilterUrl();
     refreshFilters();
   });

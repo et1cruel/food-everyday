@@ -1,4 +1,5 @@
 export const methods = ['ต้ม', 'ผัด', 'ทอด', 'นึ่ง', 'ย่าง/อบ', 'สลัด/ยำ', 'ประกอบ'];
+export const homeCollection = 'home-cooking';
 
 export const sources = {
   liang: ['สถาบันโภชนาการ มหิดล · แกงเลียง', 'https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/%E0%B9%81%E0%B8%81%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B8%87.html'],
@@ -40,11 +41,11 @@ export function normalize(text) {
 
 export function parseRecipes(text) {
   return text.trim().split(/\r?\n/u).filter(Boolean).map(line => {
-    const [id, name, english, region, method, minutes, healthy, ingredients, steps, tip, history, source] = line.split('|');
+    const [id, name, english, region, method, minutes, healthy, ingredients, steps, tip, history, source, collection] = line.split('|');
     const country = region.split(' · ')[0];
     return {
       id, name, english, region, country, method, minutes: Number(minutes), healthy: healthy === '1',
-      ingredients: ingredients.split(';'), steps: steps.split(';'), tip, history, source,
+      ingredients: ingredients.split(';'), steps: steps.split(';'), tip, history, source, collection,
       search: normalize([name, english, region, method, ingredients].join(' ')),
     };
   });
