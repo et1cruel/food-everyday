@@ -1,0 +1,9 @@
+{
+  "name": "food-everyday",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node scripts/check.mjs"
+  }
+}

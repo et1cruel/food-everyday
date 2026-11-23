@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6ef">
+  <meta name="description" content="คลังสูตรอาหารไทยและทั่วโลก เริ่มจากเมนูสุขภาพ ค้นตามวัตถุดิบ พร้อมวิธีทำและเรื่องราวของแต่ละจาน">
+  <title>FOOD EVERYDAY | เมนูสุขภาพและสูตรอาหารทั่วโลก</title>
+  <link rel="icon" href="./images/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#recipes">ข้ามไปยังรายการสูตร</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="./" class="logo"><img src="./images/icon.svg" alt="" width="38" height="38"><span>food<span class="brand-accent">everyday.</span></span></a>
+      <nav aria-label="เมนูหลัก">
+        <a class="nav-link" href="#recipes">ค้นหาสูตร</a>
+        <button class="saved-nav" type="button" aria-pressed="false"><span data-icon="bookmark"></span><span>รายการโปรด</span><span id="saved-count" hidden></span></button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="hero-label"><span data-icon="leaf"></span> สูตรจากไทยและทั่วโลก</span>
+        <h1 id="hero-title">วันนี้กินอะไร<span>ดี?</span></h1>
+        <p>เลือกมื้อที่อยากกินจากสูตรทำเองที่บ้าน เริ่มจากเมนูสุขภาพ พร้อมวัตถุดิบ วิธีทำ และเรื่องราวของแต่ละจาน</p>
+        <a href="#recipes" class="hero-button">ค้นหาเมนู <span data-icon="arrow"></span></a>
+      </div>
+      <div class="hero-media">
+        <img src="./images/hero.webp" alt="ต้มยำกุ้งน้ำใสกับเห็ดและสมุนไพรไทยในชามเซรามิก" fetchpriority="high">
+        <a class="hero-caption" href="?recipe=tom-yum-goong"><span>ต้มยำกุ้งน้ำใส <small>อาหารไทย</small></span><span data-icon="arrow"></span></a>
+      </div>
+    </section>
+
+    <section class="wrap catalog" id="recipes" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <div><h2 id="catalog-title">ค้นหาเมนู</h2><p>ลองพิมพ์วัตถุดิบที่มีอยู่ หรือเลือกวิธีทำที่อยากลอง</p></div>
+        <div class="modes" role="group" aria-label="ชุดเมนู">
+          <button data-mode="healthy" aria-pressed="true"><span data-icon="leaf"></span>สุขภาพ</button>
+          <button data-mode="all" aria-pressed="false">ทุกเมนู</button>
+        </div>
+      </div>
+      <div class="filters">
+        <label class="search"><span data-icon="search"></span><span class="sr-only">ค้นชื่อเมนู ประเทศ หรือวัตถุดิบ</span><input id="query" type="search" placeholder="ค้นชื่อเมนู ประเทศ หรือวัตถุดิบ" autocomplete="off"></label>
+        <label class="select"><span data-icon="globe"></span><span class="sr-only">ประเทศและภูมิภาค</span><select id="region"><option value="">ทุกประเทศและภูมิภาค</option></select></label>
+      </div>
+      <div class="method-list" role="group" aria-label="วิธีปรุง" id="methods"></div>
+      <div class="results-bar"><p id="result-count" role="status"></p><button type="button" id="reset" hidden>ล้างตัวกรอง</button></div>
+      <div class="grid" id="recipe-grid"></div>
+      <button id="more" type="button" hidden>ดูเมนูเพิ่ม</button>
+      <noscript>เปิด JavaScript เพื่อค้นหาและอ่านสูตรอาหาร</noscript>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="./" class="logo"><img src="./images/icon.svg" alt="" width="38" height="38"><span>food<span class="brand-accent">everyday.</span></span></a>
+      <p>เกณฑ์เลือกเมนูสุขภาพอิงหลักการกินอาหารหลากหลาย<br><a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO</a> · <a href="https://www.fao.org/nutrition/education/food-dietary-guidelines/regions/thailand/en/">คู่มืออาหารสำหรับคนไทย (FAO)</a> · ภาพประกอบอาหารสร้างด้วย AI</p>
+    </div>
+  </footer>
+  <dialog id="recipe-dialog" aria-labelledby="recipe-title">
+    <div class="dialog-toolbar"><button id="close-recipe" class="icon-button" type="button" aria-label="ปิดสูตรอาหาร"><span data-icon="x"></span></button></div>
+    <div id="recipe-detail"></div>
+  </dialog>
+</body>
+</html>
