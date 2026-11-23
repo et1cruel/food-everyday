@@ -29,13 +29,17 @@ const reset = $('#reset');
 const savedNav = $('.saved-nav');
 const dialog = $('#recipe-dialog');
 const detail = $('#recipe-detail');
+const quickFilter = $('#quick-filter');
 const pageSize = 9;
-const initialMethod = new URL(location.href).searchParams.get('method');
+const filters = new URL(location.href).searchParams;
+const initialMethod = filters.get('method');
 const state = {
-  mode: 'healthy', method: methods.includes(initialMethod) ? initialMethod : '', savedOnly: false, limit: pageSize,
+  mode: 'healthy', method: methods.includes(initialMethod) ? initialMethod : '', quick: filters.get('quick') === '1',
+  savedOnly: false, limit: pageSize,
 };
 let recipes;
 let byId;
+let photoCredits;
 let lastTrigger;
 let saved = new Set();
 
@@ -53,10 +57,18 @@ function bookmark(recipe) {
 
 function media(recipe, detailView = false) {
   const cssClass = detailView ? 'detail-image' : 'card-media';
-  const alt = detailView ? 'ภาพประกอบ ' + recipe.name : '';
+  const photo = photoCredits.files[photoCredits.recipes[recipe.id]];
+  const alt = detailView ? 'ภาพถ่ายจานอาหารสำหรับประกอบสูตร ' + recipe.name : '';
   const loading = detailView ? 'eager' : 'lazy';
-  return '<img class="' + cssClass + '" src="./images/' + recipe.id + '.webp" alt="' + escape(alt) +
+  return '<img class="' + cssClass + '" src="./images/' + escape(photo.file) + '.webp" alt="' + escape(alt) +
     '" loading="' + loading + '" decoding="async">';
+}
+
+function photoCredit(id) {
+  const photo = photoCredits.files[photoCredits.recipes[id]];
+  const link = (href, label) => '<a href="' + escape(href) + '" target="_blank" rel="noopener noreferrer">' + escape(label) + '</a>';
+  const license = photo.licenseUrl ? link(photo.licenseUrl, photo.license) : escape(photo.license);
+  return link(photo.source, photo.artist) + ' · ' + license + ' · ปรับขนาดและครอปเพื่อแสดงผล';
 }
 
 function card(recipe) {
@@ -85,20 +97,21 @@ function render() {
   const matching = recipes.filter(recipe =>
     (state.savedOnly ? saved.has(recipe.id) : state.mode === 'all' || recipe.healthy) &&
     (!state.method || recipe.method === state.method) &&
+    (!state.quick || recipe.minutes <= 20) &&
     (!selectedRegion || [recipe.country, recipe.region].includes(selectedRegion)) &&
     words.every(word => recipe.search.includes(word))
   );
+  if (state.quick) matching.sort((a, b) => a.minutes - b.minutes);
 
   grid.innerHTML = matching.slice(0, state.limit).map(card).join('') ||
     '<p class="empty">' + (state.savedOnly && !saved.size
       ? 'แตะไอคอนบุ๊กมาร์กบนการ์ดสูตรเพื่อบันทึกเมนูโปรด'
-      : state.mode === 'healthy' && state.method === 'ทอด' && !state.savedOnly
-        ? 'เลือก “ทุกเมนู” เพื่อดูสูตรของทอด'
-        : 'ไม่พบเมนูที่ตรง ลองเปลี่ยนคำค้นหรือล้างตัวกรอง') + '</p>';
+      : 'ไม่พบเมนูที่ตรง ลองเปลี่ยนคำค้นหรือล้างตัวกรอง') + '</p>';
   meter.textContent = (state.savedOnly ? 'รายการโปรด' : state.mode === 'healthy' ? 'เมนูสุขภาพ' : 'ทุกเมนู') +
     ' · ' + matching.length + ' เมนู' + (matching.length > pageSize ? ' · แสดง ' + Math.min(state.limit, matching.length) : '');
   more.hidden = matching.length <= state.limit;
-  reset.hidden = !words.length && !selectedRegion && !state.method;
+  reset.hidden = !words.length && !selectedRegion && !state.method && !state.quick;
+  quickFilter.setAttribute('aria-pressed', state.quick);
   for (const button of document.querySelectorAll('[data-mode]')) {
     button.setAttribute('aria-pressed', !state.savedOnly && button.dataset.mode === state.mode);
   }
@@ -113,18 +126,21 @@ function refreshFilters() {
   render();
 }
 
-function setMethod(method) {
-  state.method = method;
+function updateFilterUrl() {
   const url = new URL(location.href);
-  if (method) url.searchParams.set('method', method);
+  if (state.method) url.searchParams.set('method', state.method);
   else url.searchParams.delete('method');
+  if (state.quick) url.searchParams.set('quick', '1');
+  else url.searchParams.delete('quick');
   history.replaceState(history.state, '', url);
 }
 
 function clearFilters() {
   query.value = '';
   region.value = '';
-  setMethod('');
+  state.method = '';
+  state.quick = false;
+  updateFilterUrl();
   refreshFilters();
 }
 
@@ -139,7 +155,9 @@ function renderRecipe(recipe) {
     '<h2 id="recipe-title">' + escape(recipe.name) + '</h2>',
     '<p lang="en">' + escape(recipe.english) + '</p>',
     '<p>' + recipe.method + ' · ' + recipe.minutes + ' นาที · 2 ที่</p>',
-    bookmark(recipe), '</div>', media(recipe, true), '<div class="detail-body">',
+    bookmark(recipe), '</div><figure class="recipe-photo">', media(recipe, true),
+    '<figcaption>ภาพถ่ายประกอบจานใกล้เคียง ส่วนผสมอาจต่างจากสูตร · ', photoCredit(recipe.id),
+    '</figcaption></figure><div class="detail-body">',
     '<section class="health-note"><h3>ปรับให้เข้ากับมื้อสุขภาพ</h3><p>' + escape(recipe.tip) + '</p></section>',
     '<section><h3>วัตถุดิบ</h3><ul class="ingredients">' + ingredients + '</ul></section>',
     '<section><h3>วิธีทำ</h3><ol>' + steps + '</ol></section>',
@@ -197,6 +215,11 @@ function setupEvents() {
   query.addEventListener('input', refreshFilters);
   region.addEventListener('change', refreshFilters);
   reset.addEventListener('click', clearFilters);
+  quickFilter.addEventListener('click', () => {
+    state.quick = !state.quick;
+    updateFilterUrl();
+    refreshFilters();
+  });
   more.addEventListener('click', () => {
     const firstNew = state.limit;
     state.limit += pageSize;
@@ -218,7 +241,8 @@ function setupEvents() {
   $('#methods').addEventListener('click', event => {
     const button = event.target.closest('[data-method-filter]');
     if (!button) return;
-    setMethod(button.dataset.methodFilter);
+    state.method = button.dataset.methodFilter;
+    updateFilterUrl();
     refreshFilters();
   });
   document.addEventListener('click', event => {
@@ -258,8 +282,13 @@ function setupEvents() {
 
 setupEvents();
 try {
-  const response = await fetch(new URL('./recipes.txt', import.meta.url));
-  if (!response.ok) throw new Error('Recipe collection unavailable');
+  const [response, credits] = await Promise.all([
+    fetch(new URL('./recipes.txt', import.meta.url)),
+    fetch(new URL('./photo-credits.json', import.meta.url)),
+  ]);
+  if (!response.ok || !credits.ok) throw new Error('Recipe collection unavailable');
+  photoCredits = await credits.json();
+  $('#hero-credit').innerHTML = photoCredit('tom-yum-goong');
   recipes = parseRecipes(await response.text());
   byId = new Map(recipes.map(recipe => [recipe.id, recipe]));
   addOptions();

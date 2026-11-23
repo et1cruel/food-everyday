@@ -1,0 +1,1506 @@
+{
+  "recipes": {
+    "tom-yum-goong": "tom-yum-goong",
+    "nam-prik-ong": "nam-prik-ong",
+    "bibimbap": "bibimbap",
+    "pla-neung-manao": "pla-neung-manao",
+    "som-tam": "som-tam",
+    "miso-soup": "miso-soup",
+    "pho-ga": "pho-ga",
+    "gazpacho": "gazpacho",
+    "black-bean-tacos": "black-bean-tacos",
+    "gaeng-liang": "gaeng-liang",
+    "gaeng-jued-tofu": "gaeng-jued-tofu",
+    "khao-tom-pla": "khao-tom-pla",
+    "gaeng-hed-isan": "gaeng-hed-isan",
+    "miyeokguk": "miyeokguk",
+    "harira": "harira",
+    "gaeng-om": "gaeng-om",
+    "gai-tom-khamin": "gai-tom-khamin",
+    "nam-prik-num": "nam-prik-num",
+    "gaeng-som": "gaeng-som",
+    "hor-mok": "hor-mok",
+    "tod-mun": "tod-mun",
+    "khao-soi": "khao-soi",
+    "khao-pad": "khao-pad",
+    "larb-gai": "larb-gai",
+    "pad-krapao": "pad-krapao",
+    "kai-jiao": "kai-jiao",
+    "yam-hed": "yam-hed",
+    "kai-yang": "kai-yang",
+    "yum-budu": "yum-budu",
+    "goi-cuon": "goi-cuon",
+    "banh-xeo": "banh-xeo",
+    "nom-hoa-chuoi": "nom-hoa-chuoi",
+    "ca-kho": "ca-kho",
+    "japchae": "japchae",
+    "sundubu": "sundubu",
+    "gimbap": "gimbap",
+    "uchikomi-jiru": "uchikomi-jiru",
+    "dango-jiru": "dango-jiru",
+    "yakizakana": "yakizakana",
+    "tonkatsu": "tonkatsu",
+    "couscous": "couscous",
+    "soupe-joumou": "soupe-joumou",
+    "shakshuka": "shakshuka",
+    "tabbouleh": "tabbouleh",
+    "masoor-dal": "masoor-dal",
+    "chana-masala": "chana-masala",
+    "ratatouille": "ratatouille",
+    "minestrone": "minestrone",
+    "ceviche": "ceviche",
+    "borscht": "borscht",
+    "tom-kha-gai-light": "tom-kha-gai-light",
+    "tom-klong-pla": "tom-klong-pla",
+    "tom-som-pla": "tom-som-pla",
+    "gaeng-som-tai": "gaeng-som-tai",
+    "gaeng-peroe": "gaeng-peroe",
+    "tom-jued-marrah": "tom-jued-marrah",
+    "tom-jub-chai": "tom-jub-chai",
+    "gaeng-khae-gai": "gaeng-khae-gai",
+    "kenchin-jiru": "kenchin-jiru",
+    "imonoko-jiru": "imonoko-jiru",
+    "caldo-verde": "caldo-verde",
+    "caldo-tlalpeno": "caldo-tlalpeno",
+    "mercimek": "mercimek",
+    "fasolada": "fasolada",
+    "canh-chua-ca": "canh-chua-ca",
+    "rasam": "rasam",
+    "krupnik": "krupnik",
+    "canja": "canja",
+    "yam-tuna-cucumber": "yam-tuna-cucumber",
+    "yam-chicken-cabbage": "yam-chicken-cabbage",
+    "yam-boiled-egg": "yam-boiled-egg",
+    "yam-edamame": "yam-edamame",
+    "yam-pomelo-shrimp": "yam-pomelo-shrimp",
+    "yam-mango-tofu": "yam-mango-tofu",
+    "yam-okra": "yam-okra",
+    "yam-lentil-mint": "yam-lentil-mint",
+    "chickpea-parsley": "chickpea-parsley",
+    "apple-cabbage-slaw": "apple-cabbage-slaw",
+    "tomato-mozzarella": "tomato-mozzarella",
+    "beet-yogurt-walnut": "beet-yogurt-walnut",
+    "white-bean-arugula": "white-bean-arugula",
+    "carrot-orange-seeds": "carrot-orange-seeds",
+    "cucumber-chicken-yogurt": "yam-chicken-cabbage",
+    "pear-spinach-pepita": "pear-spinach-pepita",
+    "bowl-salmon-edamame": "bowl-salmon-edamame",
+    "bowl-tuna-avocado": "yam-tuna-cucumber",
+    "bowl-chicken-corn": "bowl-chicken-corn",
+    "bowl-tofu-kimchi": "bowl-tofu-kimchi",
+    "bowl-quinoa-beet": "bowl-quinoa-beet",
+    "bowl-buckwheat-egg": "bowl-buckwheat-egg",
+    "bowl-blackbean-corn": "bowl-blackbean-corn",
+    "bowl-rice-noodle-shrimp": "bowl-rice-noodle-shrimp",
+    "stir-chicken-ginger": "stir-chicken-ginger",
+    "stir-chicken-broccoli": "stir-chicken-broccoli",
+    "stir-chicken-snowpea": "stir-chicken-snowpea",
+    "stir-chicken-bellpepper": "stir-chicken-bellpepper",
+    "stir-chicken-corn": "stir-chicken-corn",
+    "stir-chicken-pineapple": "stir-chicken-pineapple",
+    "stir-chicken-basil-onion": "stir-chicken-basil-onion",
+    "stir-pork-daikon": "stir-pork-daikon",
+    "stir-shrimp-asparagus": "stir-shrimp-asparagus",
+    "stir-shrimp-gourd": "stir-shrimp-gourd",
+    "stir-shrimp-celery": "stir-shrimp-celery",
+    "stir-squid-basil": "stir-squid-basil",
+    "stir-squid-ginger": "stir-squid-ginger",
+    "stir-shrimp-cauliflower": "stir-shrimp-celery",
+    "stir-fish-scallion": "stir-fish-scallion",
+    "stir-shrimp-bokchoy": "stir-shrimp-bokchoy",
+    "stir-tofu-miso-eggplant": "stir-tofu-miso-eggplant",
+    "stir-tempeh-broccoli": "stir-tempeh-broccoli",
+    "stir-tofu-cabbage": "stir-tofu-cabbage",
+    "stir-chickpea-spinach": "stir-chickpea-spinach",
+    "stir-mushroom-balsamic": "stir-mushroom-balsamic",
+    "stir-zucchini-corn": "stir-zucchini-corn",
+    "stir-tofu-peanut": "stir-tofu-peanut",
+    "stir-blackbean-pepper": "stir-blackbean-pepper",
+    "soup-egg-ribbon-napa": "soup-egg-ribbon-napa",
+    "soup-silken-tofu-tomato": "soup-silken-tofu-tomato",
+    "soup-mushroom-ginger": "soup-mushroom-ginger",
+    "soup-shrimp-zucchini": "soup-shrimp-zucchini",
+    "soup-corn-egg": "soup-corn-egg",
+    "soup-tofu-spinach": "soup-silken-tofu-tomato",
+    "soup-chicken-cabbage": "soup-chicken-cabbage",
+    "soup-fish-tomato-celery": "tom-som-pla",
+    "soup-whitebean-tomato": "soup-whitebean-tomato",
+    "soup-pea-yogurt": "soup-pea-yogurt",
+    "soup-pumpkin-oats": "soup-pumpkin-oats",
+    "soup-carrot-lentils": "soup-carrot-lentils",
+    "soup-chicken-vermicelli": "soup-chicken-vermicelli",
+    "soup-tomato-orzo": "soup-tomato-orzo",
+    "soup-broccoli-potato": "soup-broccoli-potato",
+    "soup-tomato-egg": "soup-tomato-egg",
+    "grill-salmon-zucchini": "grill-salmon-zucchini",
+    "grill-chicken-carrot": "grill-chicken-carrot",
+    "grill-tofu-broccoli": "grill-tofu-broccoli",
+    "grill-shrimp-pepper": "grill-shrimp-pepper",
+    "grill-tilapia-tomato": "grill-tilapia-tomato",
+    "grill-eggplant-hummus": "grill-eggplant-hummus",
+    "grill-chicken-mushroom": "grill-chicken-mushroom",
+    "grill-corn-zucchini": "grill-corn-zucchini",
+    "pan-egg-spinach": "pan-egg-spinach",
+    "pan-oat-zucchini": "pan-oat-zucchini",
+    "pan-corn-carrot": "pan-corn-carrot",
+    "pan-tuna-carrot": "pan-tuna-carrot",
+    "pan-chickpea-zucchini": "pan-chickpea-zucchini",
+    "pan-potato-pea": "pan-potato-pea",
+    "pan-egg-tomato": "pan-egg-tomato",
+    "pan-tofu-breadcrumb": "pan-tofu-breadcrumb",
+    "steam-egg-carrot": "steam-egg-carrot",
+    "steam-fish-napa": "steam-fish-napa",
+    "steam-tofu-mushroom": "steam-tofu-mushroom",
+    "steam-shrimp-broccoli": "steam-shrimp-broccoli",
+    "steam-pumpkin-yogurt": "steam-pumpkin-yogurt",
+    "steam-egg-tofu": "steam-egg-tofu",
+    "steam-cabbage-egg": "soup-chicken-cabbage",
+    "steam-seabass-tomato": "steam-seabass-tomato",
+    "wrap-chicken-carrot": "wrap-chicken-carrot",
+    "wrap-tuna-cucumber": "wrap-tuna-cucumber",
+    "wrap-hummus-beet": "wrap-hummus-beet",
+    "wrap-egg-spinach": "wrap-egg-spinach",
+    "wrap-bean-corn": "wrap-bean-corn",
+    "sandwich-chicken-apple": "sandwich-chicken-apple",
+    "sandwich-egg-carrot": "sandwich-egg-carrot",
+    "sandwich-hummus-cucumber": "sandwich-hummus-cucumber",
+    "toast-avocado-tomato": "toast-avocado-tomato",
+    "toast-whitebean-cucumber": "toast-whitebean-cucumber",
+    "toast-egg-tomato": "toast-egg-tomato",
+    "toast-tuna-corn": "toast-tuna-corn",
+    "yogurt-carrot-apple": "yogurt-carrot-apple",
+    "yogurt-pumpkin-banana": "yogurt-pumpkin-banana",
+    "yogurt-cucumber-egg": "yogurt-cucumber-egg",
+    "yogurt-beet-pear": "yogurt-beet-pear"
+  },
+  "files": {
+    "tom-yum-goong": {
+      "file": "tom-yum-goong",
+      "source": "https://commons.wikimedia.org/wiki/File:Tom_yum_goong_at_Thai_Orchid_Villa_Kamppi.jpg",
+      "title": "Tom yum goong at Thai Orchid Villa Kamppi.jpg",
+      "artist": "JIP",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "nam-prik-ong": {
+      "file": "nam-prik-ong",
+      "source": "https://commons.wikimedia.org/wiki/File:Nam_phrik_ong.jpg",
+      "title": "Nam phrik ong.jpg",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "bibimbap": {
+      "file": "bibimbap",
+      "source": "https://commons.wikimedia.org/wiki/File:Bibimbap_7.jpg",
+      "title": "Bibimbap 7.jpg",
+      "artist": "Chloe Lim",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "pla-neung-manao": {
+      "file": "pla-neung-manao",
+      "source": "https://commons.wikimedia.org/wiki/File:Thai_steamed_fish_with_lime_juice.jpg",
+      "title": "Thai steamed fish with lime juice.jpg",
+      "artist": "User:Mattes",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    "som-tam": {
+      "file": "som-tam",
+      "source": "https://commons.wikimedia.org/wiki/File:Som_Tam_green_papaya_salad,_Bangkok,_Thailand.jpg",
+      "title": "Som Tam green papaya salad, Bangkok, Thailand.jpg",
+      "artist": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "miso-soup": {
+      "file": "miso-soup",
+      "source": "https://commons.wikimedia.org/wiki/File:Miso_Soup.jpg",
+      "title": "Miso Soup.jpg",
+      "artist": "ish-ka",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    "pho-ga": {
+      "file": "pho-ga",
+      "source": "https://commons.wikimedia.org/wiki/File:Pho_ga_(Mary%27s_chicken)_(25735388134).jpg",
+      "title": "Pho ga (Mary's chicken) (25735388134).jpg",
+      "artist": "T.Tseng",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "gazpacho": {
+      "file": "gazpacho",
+      "source": "https://commons.wikimedia.org/wiki/File:Gazpacho_Cazuela_Barro.jpg",
+      "title": "Gazpacho Cazuela Barro.jpg",
+      "artist": "Bocadorada",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "black-bean-tacos": {
+      "file": "black-bean-tacos",
+      "source": "https://commons.wikimedia.org/wiki/File:Roasted_sweet_potato_%2B_black_bean_tacos_(7784822910).jpg",
+      "title": "Roasted sweet potato + black bean tacos (7784822910).jpg",
+      "artist": "Karen and Brad Emerson",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "gaeng-liang": {
+      "file": "gaeng-liang",
+      "source": "https://commons.wikimedia.org/wiki/File:%E0%B9%81%E0%B8%81%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B8%87.jpg",
+      "title": "แกงเลียง.jpg",
+      "artist": "Phuphiphat Phumi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "gaeng-jued-tofu": {
+      "file": "gaeng-jued-tofu",
+      "source": "https://commons.wikimedia.org/wiki/File:Tom_chuet_taohu.jpg",
+      "title": "Tom chuet taohu.jpg",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "khao-tom-pla": {
+      "file": "khao-tom-pla",
+      "source": "https://commons.wikimedia.org/wiki/File:Khao_tom_pla.jpg",
+      "title": "Khao tom pla.jpg",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "gaeng-hed-isan": {
+      "file": "gaeng-hed-isan",
+      "source": "https://commons.wikimedia.org/wiki/File:Kaeng_het.jpg",
+      "title": "Kaeng het.jpg",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "miyeokguk": {
+      "file": "miyeokguk",
+      "source": "https://commons.wikimedia.org/wiki/File:Korea.food-Miyeok.guk-01.jpg",
+      "title": "Korea.food-Miyeok.guk-01.jpg",
+      "artist": "User:Feth",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "harira": {
+      "file": "harira",
+      "source": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Harira_soup_prepared_at_home.jpg",
+      "title": "Liat Portal for Foodie Disorder - Harira soup prepared at home.jpg",
+      "artist": "HaJunkiyada",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "gaeng-om": {
+      "file": "gaeng-om",
+      "source": "https://commons.wikimedia.org/wiki/File:Kaeng_om_01.jpg",
+      "title": "Kaeng om 01.jpg",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "gai-tom-khamin": {
+      "file": "gai-tom-khamin",
+      "source": "https://commons.wikimedia.org/wiki/File:Soto_Ayam_home-made.JPG",
+      "title": "Soto Ayam home-made.JPG",
+      "artist": "Gunawan Kartapranata",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "nam-prik-num": {
+      "file": "nam-prik-num",
+      "source": "https://commons.wikimedia.org/wiki/File:Nam_phrik_num.jpg",
+      "title": "Nam phrik num.jpg",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "gaeng-som": {
+      "file": "gaeng-som",
+      "source": "https://commons.wikimedia.org/wiki/File:Kaeng_som_kung_dok_khae.JPG",
+      "title": "Kaeng som kung dok khae.JPG",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "hor-mok": {
+      "file": "hor-mok",
+      "source": "https://commons.wikimedia.org/wiki/File:Ho_mok_pla.JPG",
+      "title": "Ho mok pla.JPG",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "tod-mun": {
+      "file": "tod-mun",
+      "source": "https://commons.wikimedia.org/wiki/File:Thanin_market_tod_man_pla.jpg",
+      "title": "Thanin market tod man pla.jpg",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "khao-soi": {
+      "file": "khao-soi",
+      "source": "https://commons.wikimedia.org/wiki/File:Khao_soi_Chiang_Mai.jpg",
+      "title": "Khao soi Chiang Mai.jpg",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "khao-pad": {
+      "file": "khao-pad",
+      "source": "https://commons.wikimedia.org/wiki/File:Egg_Fried_Rice.jpg",
+      "title": "Egg Fried Rice.jpg",
+      "artist": "Gaurav Dhwaj Khadka",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "larb-gai": {
+      "file": "larb-gai",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_224-_Chicken_Larb_(7947748382).jpg",
+      "title": "Day 224- Chicken Larb (7947748382).jpg",
+      "artist": "Sodanie Chea from Norwalk, Ca, United States",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "pad-krapao": {
+      "file": "pad-krapao",
+      "source": "https://commons.wikimedia.org/wiki/File:Pud_Tofu_Makhru_-_Little_Thai_Cafe.jpg",
+      "title": "Pud Tofu Makhru - Little Thai Cafe.jpg",
+      "artist": "avlxyz",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "kai-jiao": {
+      "file": "kai-jiao",
+      "source": "https://commons.wikimedia.org/wiki/File:Omelette_1.jpg",
+      "title": "Omelette 1.jpg",
+      "artist": "Gaurav Dhwaj Khadka",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "yam-hed": {
+      "file": "yam-hed",
+      "source": "https://commons.wikimedia.org/wiki/File:Laab_Tao-Hu_Hed_Saam_Yaang.jpg",
+      "title": "Laab Tao-Hu Hed Saam Yaang.jpg",
+      "artist": "Zheng Zhou",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "kai-yang": {
+      "file": "kai-yang",
+      "source": "https://commons.wikimedia.org/wiki/File:Kai_yang_2.jpg",
+      "title": "Kai yang 2.jpg",
+      "artist": "lazy fri13th",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "yum-budu": {
+      "file": "yum-budu",
+      "source": "https://commons.wikimedia.org/wiki/File:Nam_Phrik_Kapi.jpg",
+      "title": "Nam Phrik Kapi.jpg",
+      "artist": "Idear409",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "goi-cuon": {
+      "file": "goi-cuon",
+      "source": "https://commons.wikimedia.org/wiki/File:G%E1%BB%8Fi_cu%E1%BB%91n_at_a_Vietnamese-style_restaurant_in_Beijing_(20180103175625).jpg",
+      "title": "Gỏi cuốn at a Vietnamese-style restaurant in Beijing (20180103175625).jpg",
+      "artist": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "banh-xeo": {
+      "file": "banh-xeo",
+      "source": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_x%C3%A8o_1.jpg",
+      "title": "Bánh xèo 1.jpg",
+      "artist": "Kent Wang from Austin, TX",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "nom-hoa-chuoi": {
+      "file": "nom-hoa-chuoi",
+      "source": "https://commons.wikimedia.org/wiki/File:N%E1%BB%99m_hoa_chu%E1%BB%91i.png",
+      "title": "Nộm hoa chuối.png",
+      "artist": "Jicara Foodie Traveller",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "ca-kho": {
+      "file": "ca-kho",
+      "source": "https://commons.wikimedia.org/wiki/File:C%C3%A1_kho_t%E1%BB%99.JPG",
+      "title": "Cá kho tộ.JPG",
+      "artist": "Binh Giang",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    "japchae": {
+      "file": "japchae",
+      "source": "https://commons.wikimedia.org/wiki/File:Homemade_Japchae,_Dhaka_02.jpg",
+      "title": "Homemade Japchae, Dhaka 02.jpg",
+      "artist": "Ibrahim Husain Meraj",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "sundubu": {
+      "file": "sundubu",
+      "source": "https://commons.wikimedia.org/wiki/File:Korean_stew-Sundubu_jjigae-05.jpg",
+      "title": "Korean stew-Sundubu jjigae-05.jpg",
+      "artist": "by titanium22",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "gimbap": {
+      "file": "gimbap",
+      "source": "https://commons.wikimedia.org/wiki/File:KTX_gimbap-dosirak.jpg",
+      "title": "KTX gimbap-dosirak.jpg",
+      "artist": "Melsj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "uchikomi-jiru": {
+      "file": "uchikomi-jiru",
+      "source": "https://commons.wikimedia.org/wiki/File:Miso_nikomi_udon_by_shibainu_in_Suginami.jpg",
+      "title": "Miso nikomi udon by shibainu in Suginami.jpg",
+      "artist": "shibainu from Suginami, Tokyo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "dango-jiru": {
+      "file": "dango-jiru",
+      "source": "https://commons.wikimedia.org/wiki/File:Dango_jiru.jpg",
+      "title": "Dango jiru.jpg",
+      "artist": "OitaKiseichu",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "yakizakana": {
+      "file": "yakizakana",
+      "source": "https://commons.wikimedia.org/wiki/File:Grilled_Japanese_spanish_mackerel_(16175447598).jpg",
+      "title": "Grilled Japanese spanish mackerel (16175447598).jpg",
+      "artist": "pelican from Tokyo, Japan",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "tonkatsu": {
+      "file": "tonkatsu",
+      "source": "https://commons.wikimedia.org/wiki/File:Tonkatsu_and_Cabbage.jpg",
+      "title": "Tonkatsu and Cabbage.jpg",
+      "artist": "ノボホショコロトソ",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "couscous": {
+      "file": "couscous",
+      "source": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Algerian_Couscous_with_Vegetables.jpg",
+      "title": "Liat Portal for Foodie Disorder - Algerian Couscous with Vegetables.jpg",
+      "artist": "HaJunkiyada",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "soupe-joumou": {
+      "file": "soupe-joumou",
+      "source": "https://commons.wikimedia.org/wiki/File:Soup_joumou.jpg",
+      "title": "Soup joumou.jpg",
+      "artist": "Lëa-Kim Châteauneuf",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "shakshuka": {
+      "file": "shakshuka",
+      "source": "https://commons.wikimedia.org/wiki/File:Shakshuka_by_Calliopejen1.jpg",
+      "title": "Shakshuka by Calliopejen1.jpg",
+      "artist": "Calliopejen1",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "tabbouleh": {
+      "file": "tabbouleh",
+      "source": "https://commons.wikimedia.org/wiki/File:Flickr_-_cyclonebill_-_Tabbouleh.jpg",
+      "title": "Flickr - cyclonebill - Tabbouleh.jpg",
+      "artist": "cyclonebill",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "masoor-dal": {
+      "file": "masoor-dal",
+      "source": "https://commons.wikimedia.org/wiki/File:Masoor_Dal_in_Dhaba_Style.jpg",
+      "title": "Masoor Dal in Dhaba Style.jpg",
+      "artist": "Solehachikhalkar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "chana-masala": {
+      "file": "chana-masala",
+      "source": "https://commons.wikimedia.org/wiki/File:Chana_Masala_in_Paul%C3%ADnia,_2023-10-16.jpg",
+      "title": "Chana Masala in Paulínia, 2023-10-16.jpg",
+      "artist": "Parzeus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "ratatouille": {
+      "file": "ratatouille",
+      "source": "https://commons.wikimedia.org/wiki/File:Ratatouille.jpg",
+      "title": "Ratatouille.jpg",
+      "artist": "Marcus Guimarães",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "minestrone": {
+      "file": "minestrone",
+      "source": "https://commons.wikimedia.org/wiki/File:Minestrone_soup.jpg",
+      "title": "Minestrone soup.jpg",
+      "artist": "Katrin Morenz from Aachen, Deutschland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "ceviche": {
+      "file": "ceviche",
+      "source": "https://commons.wikimedia.org/wiki/File:Ceviche_de_camar%C3%B3n_con_mango.jpg",
+      "title": "Ceviche de camarón con mango.jpg",
+      "artist": "Pequeño mar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "borscht": {
+      "file": "borscht",
+      "source": "https://commons.wikimedia.org/wiki/File:Bowl_of_Ukrainian_Borscht.jpg",
+      "title": "Bowl of Ukrainian Borscht.jpg",
+      "artist": "Borshch at English Wikibooks",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    "tom-kha-gai-light": {
+      "file": "tom-kha-gai-light",
+      "source": "https://commons.wikimedia.org/wiki/File:Tom_kha_gai2.jpg",
+      "title": "Tom kha gai2.jpg",
+      "artist": "lydiajoy1",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "tom-klong-pla": {
+      "file": "tom-klong-pla",
+      "source": "https://commons.wikimedia.org/wiki/File:Tom_khlong.JPG",
+      "title": "Tom khlong.JPG",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "tom-som-pla": {
+      "file": "tom-som-pla",
+      "source": "https://commons.wikimedia.org/wiki/File:Canh_chua_c%C3%A1_l%C3%B3c_%E1%BB%9F_Th%E1%BB%A7y_Tr%C3%BAc_Qu%C3%A1n,_%C4%91%C6%B0%E1%BB%9Dng_Nguy%E1%BB%85n_Nh%E1%BB%AF_L%C3%A3m_(4).jpg",
+      "title": "Canh chua cá lóc ở Thủy Trúc Quán, đường Nguyễn Nhữ Lãm (4).jpg",
+      "artist": "Phương Huy ( thảo luận )",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    "gaeng-som-tai": {
+      "file": "gaeng-som-tai",
+      "source": "https://commons.wikimedia.org/wiki/File:Kaeng_som_pla_sapparot.jpg",
+      "title": "Kaeng som pla sapparot.jpg",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "gaeng-peroe": {
+      "file": "gaeng-peroe",
+      "source": "https://commons.wikimedia.org/wiki/File:Kaeng_no_mai.jpg",
+      "title": "Kaeng no mai.jpg",
+      "artist": "User:Mattes",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    "tom-jued-marrah": {
+      "file": "tom-jued-marrah",
+      "source": "https://commons.wikimedia.org/wiki/File:Soup_made_from_stuffed_bitter_melon,_Canh_Kho_Qua.jpg",
+      "title": "Soup made from stuffed bitter melon, Canh Kho Qua.jpg",
+      "artist": "HungryHuy",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "tom-jub-chai": {
+      "file": "tom-jub-chai",
+      "source": "https://commons.wikimedia.org/wiki/File:Pesto_prima_vera_vegetable_stew.jpg",
+      "title": "Pesto prima vera vegetable stew.jpg",
+      "artist": "Abdul-Rauf Moshie",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "gaeng-khae-gai": {
+      "file": "gaeng-khae-gai",
+      "source": "https://commons.wikimedia.org/wiki/File:Kaeng_khae-963.JPG",
+      "title": "Kaeng khae-963.JPG",
+      "artist": "Xufanc",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "kenchin-jiru": {
+      "file": "kenchin-jiru",
+      "source": "https://commons.wikimedia.org/wiki/File:Kenchin-jiru.jpg",
+      "title": "Kenchin-jiru.jpg",
+      "artist": "Fred Cherrygarden",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "imonoko-jiru": {
+      "file": "imonoko-jiru",
+      "source": "https://commons.wikimedia.org/wiki/File:Imoni.jpg",
+      "title": "Imoni.jpg",
+      "artist": "H-shimo at ja.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "caldo-verde": {
+      "file": "caldo-verde",
+      "source": "https://commons.wikimedia.org/wiki/File:Caldo_verde_-_Jul_2008.jpg",
+      "title": "Caldo verde - Jul 2008.jpg",
+      "artist": "Therese C",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "caldo-tlalpeno": {
+      "file": "caldo-tlalpeno",
+      "source": "https://commons.wikimedia.org/wiki/File:Caldo_tlalpe%C3%B1o.JPG",
+      "title": "Caldo tlalpeño.JPG",
+      "artist": "Saloca",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "mercimek": {
+      "file": "mercimek",
+      "source": "https://commons.wikimedia.org/wiki/File:Mercimek_%C3%A7orbasi.jpg",
+      "title": "Mercimek çorbasi.jpg",
+      "artist": "E4024",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "fasolada": {
+      "file": "fasolada",
+      "source": "https://commons.wikimedia.org/wiki/File:Fasolada_Xenophontos_trapeza.jpg",
+      "title": "Fasolada Xenophontos trapeza.jpg",
+      "artist": "Florificapis",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "canh-chua-ca": {
+      "file": "canh-chua-ca",
+      "source": "https://commons.wikimedia.org/wiki/File:Canh_chua_c%C3%A1_l%C3%B3c_%E1%BB%9F_Th%E1%BB%A7y_Tr%C3%BAc_Qu%C3%A1n,_%C4%91%C6%B0%E1%BB%9Dng_Nguy%E1%BB%85n_Nh%E1%BB%AF_L%C3%A3m_(3).jpg",
+      "title": "Canh chua cá lóc ở Thủy Trúc Quán, đường Nguyễn Nhữ Lãm (3).jpg",
+      "artist": "Phương Huy ( thảo luận )",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    "rasam": {
+      "file": "rasam",
+      "source": "https://commons.wikimedia.org/wiki/File:Tomato_Rasam_-_Home_Made.JPG",
+      "title": "Tomato Rasam - Home Made.JPG",
+      "artist": "Mailz2kumar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "krupnik": {
+      "file": "krupnik",
+      "source": "https://commons.wikimedia.org/wiki/File:Krupnik_zupa.jpg",
+      "title": "Krupnik zupa.jpg",
+      "artist": "Mariuszjbie",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "canja": {
+      "file": "canja",
+      "source": "https://commons.wikimedia.org/wiki/File:Canja_de_galinha.jpg",
+      "title": "Canja de galinha.jpg",
+      "artist": "Sebástian Freire from Rio de Janeiro, Brasil",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "yam-tuna-cucumber": {
+      "file": "yam-tuna-cucumber",
+      "source": "https://commons.wikimedia.org/wiki/File:%E3%81%93%E3%81%A8%E3%82%8A%E3%81%A3%E3%81%B1%E3%81%AE%E3%83%84%E3%83%8A%E3%81%A8%E3%82%AD%E3%83%A5%E3%82%A6%E3%83%AA%E3%81%AE%E3%83%9D%E3%83%86%E3%83%88%E3%82%B5%E3%83%A9%E3%83%80.jpg",
+      "title": "ことりっぱのツナとキュウリのポテトサラダ.jpg",
+      "artist": "経済特区",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "yam-chicken-cabbage": {
+      "file": "yam-chicken-cabbage",
+      "source": "https://commons.wikimedia.org/wiki/File:Chicken_Salad_(7285807632).jpg",
+      "title": "Chicken Salad (7285807632).jpg",
+      "artist": "Rod Waddington from Kergunyah, Australia",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "yam-boiled-egg": {
+      "file": "yam-boiled-egg",
+      "source": "https://commons.wikimedia.org/wiki/File:Salted_Egg_Salad.jpg",
+      "title": "Salted Egg Salad.jpg",
+      "artist": "Herbertkikoy",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "yam-edamame": {
+      "file": "yam-edamame",
+      "source": "https://commons.wikimedia.org/wiki/File:Corn_And_Edamame_Sesame_Salad_(140491193).jpeg",
+      "title": "Corn And Edamame Sesame Salad (140491193).jpeg",
+      "artist": "J Doll",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    "yam-pomelo-shrimp": {
+      "file": "yam-pomelo-shrimp",
+      "source": "https://commons.wikimedia.org/wiki/File:Yam_som-o.JPG",
+      "title": "Yam som-o.JPG",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "yam-mango-tofu": {
+      "file": "yam-mango-tofu",
+      "source": "https://commons.wikimedia.org/wiki/File:Green_Mango_Salad_(15968774099).jpg",
+      "title": "Green Mango Salad (15968774099).jpg",
+      "artist": "yashima from Karlsruhe, Germany",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "yam-okra": {
+      "file": "yam-okra",
+      "source": "https://commons.wikimedia.org/wiki/File:Hainan_chicken_rice,_steamed_okra_with_mustard,_cellophane_noodle_salad,_wakame_seaweed_soup_%E6%B5%B7%E5%8D%97%E9%B6%8F%E9%A3%AF%E3%80%81%E8%92%B8%E3%81%97%E3%82%AA%E3%82%AF%E3%83%A9%E3%81%AE%E8%BE%9B%E5%AD%90%E5%92%8C%E3%81%88%E3%80%81%E6%98%A5%E9%9B%A8%E3%82%B5%E3%83%A9%E3%83%80%E3%80%81%E3%83%AF%E3%82%AB%E3%83%A1%E3%82%B9%E3%83%BC%E3%83%97.jpg",
+      "title": "Hainan chicken rice, steamed okra with mustard, cellophane noodle salad, wakame seaweed soup 海南鶏飯、蒸しオクラの辛子和え、春雨サラダ、ワカメスープ.jpg",
+      "artist": "naotakem",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "yam-lentil-mint": {
+      "file": "yam-lentil-mint",
+      "source": "https://commons.wikimedia.org/wiki/File:Lentil_salad_with_black_olives,_carrot,_tomatoand_red_pepper_(7520199672).jpg",
+      "title": "Lentil salad with black olives, carrot, tomatoand red pepper (7520199672).jpg",
+      "artist": "Lablascovegmenu from London",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "chickpea-parsley": {
+      "file": "chickpea-parsley",
+      "source": "https://commons.wikimedia.org/wiki/File:Salad_with_Chana,_Cucumber,_Pomegranate_-_home_made-Chennai,_Tamil_Nadu-0206.jpg",
+      "title": "Salad with Chana, Cucumber, Pomegranate - home made-Chennai, Tamil Nadu-0206.jpg",
+      "artist": "Venkatarangan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "apple-cabbage-slaw": {
+      "file": "apple-cabbage-slaw",
+      "source": "https://commons.wikimedia.org/wiki/File:Readily_made_Coleslaw_salad_01.jpg",
+      "title": "Readily made Coleslaw salad 01.jpg",
+      "artist": "MaiDenzel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "tomato-mozzarella": {
+      "file": "tomato-mozzarella",
+      "source": "https://commons.wikimedia.org/wiki/File:Insalata_Caprese_(from_Poznan).JPG",
+      "title": "Insalata Caprese (from Poznan).JPG",
+      "artist": "MOs810",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "beet-yogurt-walnut": {
+      "file": "beet-yogurt-walnut",
+      "source": "https://commons.wikimedia.org/wiki/File:Rocket_lettuce,_Zucchini,_Beetroot,_Corn_kernels,_Pumpkin_seeds_and_Yogurt_sauce_salad_plus_spices.jpg",
+      "title": "Rocket lettuce, Zucchini, Beetroot, Corn kernels, Pumpkin seeds and Yogurt sauce salad plus spices.jpg",
+      "artist": "Kgbo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "white-bean-arugula": {
+      "file": "white-bean-arugula",
+      "source": "https://commons.wikimedia.org/wiki/File:White_bean_mediterranean_salad.jpg",
+      "title": "White bean mediterranean salad.jpg",
+      "artist": "gran",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    "carrot-orange-seeds": {
+      "file": "carrot-orange-seeds",
+      "source": "https://commons.wikimedia.org/wiki/File:Carrot_and_orange_Salad.jpg",
+      "title": "Carrot and orange Salad.jpg",
+      "artist": "Prakash G",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "pear-spinach-pepita": {
+      "file": "pear-spinach-pepita",
+      "source": "https://commons.wikimedia.org/wiki/File:Spinach_pear_salad_with_chocolate_vinaigrette_(8463884226).jpg",
+      "title": "Spinach pear salad with chocolate vinaigrette (8463884226).jpg",
+      "artist": "Karen and Brad Emerson",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "bowl-salmon-edamame": {
+      "file": "bowl-salmon-edamame",
+      "source": "https://commons.wikimedia.org/wiki/File:Teriyaki_Salmon_Claypot_Rice_-_Claypot_King,_Glen_Waverley_(2993613849).jpg",
+      "title": "Teriyaki Salmon Claypot Rice - Claypot King, Glen Waverley (2993613849).jpg",
+      "artist": "Alpha from Melbourne, Australia",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "bowl-chicken-corn": {
+      "file": "bowl-chicken-corn",
+      "source": "https://commons.wikimedia.org/wiki/File:2019-05-04_20_10_55_A_burrito_bowl_from_Chipotle_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg",
+      "title": "2019-05-04 20 10 55 A burrito bowl from Chipotle in the Franklin Farm section of Oak Hill, Fairfax County, Virginia.jpg",
+      "artist": "Famartin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "bowl-tofu-kimchi": {
+      "file": "bowl-tofu-kimchi",
+      "source": "https://commons.wikimedia.org/wiki/File:Rice_bowl_topped_with_tofu_(7960798384).jpg",
+      "title": "Rice bowl topped with tofu (7960798384).jpg",
+      "artist": "pelican from Tokyo, Japan",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "bowl-quinoa-beet": {
+      "file": "bowl-quinoa-beet",
+      "source": "https://commons.wikimedia.org/wiki/File:Quinoa_Salad_(5045982815).jpg",
+      "title": "Quinoa Salad (5045982815).jpg",
+      "artist": "Geoff Peters from Vancouver, BC, Canada",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "bowl-buckwheat-egg": {
+      "file": "bowl-buckwheat-egg",
+      "source": "https://commons.wikimedia.org/wiki/File:Sansai_hiyashi_soba_by_jetalone_in_Hanno,_Saitama.jpg",
+      "title": "Sansai hiyashi soba by jetalone in Hanno, Saitama.jpg",
+      "artist": "jetalone from Udon and soba restaurant Yukiyanagi in Hanno, Saitama",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "bowl-blackbean-corn": {
+      "file": "bowl-blackbean-corn",
+      "source": "https://commons.wikimedia.org/wiki/File:Homemade_Rice_Bowl.jpg",
+      "title": "Homemade Rice Bowl.jpg",
+      "artist": "ParentingPatch",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "bowl-rice-noodle-shrimp": {
+      "file": "bowl-rice-noodle-shrimp",
+      "source": "https://commons.wikimedia.org/wiki/File:Steamed_Shrimp_%26_Vermicelli_in_Garlic_Sauce_(6955843275).jpg",
+      "title": "Steamed Shrimp & Vermicelli in Garlic Sauce (6955843275).jpg",
+      "artist": "Daniel Lombraña González from Madrid, Spain",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "stir-chicken-ginger": {
+      "file": "stir-chicken-ginger",
+      "source": "https://commons.wikimedia.org/wiki/File:Ginger_chicken_(3168342551).jpg",
+      "title": "Ginger chicken (3168342551).jpg",
+      "artist": "Ginny",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "stir-chicken-broccoli": {
+      "file": "stir-chicken-broccoli",
+      "source": "https://commons.wikimedia.org/wiki/File:Chicken_And_Broccoli_@_Bamboo_Asian_Cuisine.jpg",
+      "title": "Chicken And Broccoli @ Bamboo Asian Cuisine.jpg",
+      "artist": "Discover Lehigh Valley, PA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "stir-chicken-snowpea": {
+      "file": "stir-chicken-snowpea",
+      "source": "https://commons.wikimedia.org/wiki/File:Chicken_and_snow_peas_with_stir_fried_green_beans_(15666974844).jpg",
+      "title": "Chicken and snow peas with stir fried green beans (15666974844).jpg",
+      "artist": "jeffreyw",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "stir-chicken-bellpepper": {
+      "file": "stir-chicken-bellpepper",
+      "source": "https://commons.wikimedia.org/wiki/File:DFC_2217_Sweet_and_savory_stir-fry_with_colorful_bell_peppers_carrots_onions_and_tender_strips_of_chicken_glazed_in_a_glossy_sauce.jpg",
+      "title": "DFC 2217 Sweet and savory stir-fry with colorful bell peppers carrots onions and tender strips of chicken glazed in a glossy sauce.jpg",
+      "artist": "PattayaPatrol",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "stir-chicken-corn": {
+      "file": "stir-chicken-corn",
+      "source": "https://commons.wikimedia.org/wiki/File:Filipino_Chop_Suey.jpg",
+      "title": "Filipino Chop Suey.jpg",
+      "artist": "ShmilyDigital",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "stir-chicken-pineapple": {
+      "file": "stir-chicken-pineapple",
+      "source": "https://commons.wikimedia.org/wiki/File:DFC_0882_A_colorful_plate_of_sweet_and_sour_chicken_with_bell_peppers_pineapple_chunks_and_scallions_served_in_a_white_oval_dish.jpg",
+      "title": "DFC 0882 A colorful plate of sweet and sour chicken with bell peppers pineapple chunks and scallions served in a white oval dish.jpg",
+      "artist": "PattayaPatrol",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "stir-chicken-basil-onion": {
+      "file": "stir-chicken-basil-onion",
+      "source": "https://commons.wikimedia.org/wiki/File:DFC_0804_A_plate_of_steamed_white_rice_topped_with_a_runny_fried_egg_served_alongside_stir-fried_minced_chicken_with_basil_and_sliced_cucumber.jpg",
+      "title": "DFC 0804 A plate of steamed white rice topped with a runny fried egg served alongside stir-fried minced chicken with basil and sliced cucumber.jpg",
+      "artist": "PattayaPatrol",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "stir-pork-daikon": {
+      "file": "stir-pork-daikon",
+      "source": "https://commons.wikimedia.org/wiki/File:Pork_and_cabbage_stir_fry_with_daikon_miso_soup_and_brown_rice_%E5%9B%9E%E9%8D%8B%E8%82%89%E3%82%82%E3%81%A9%E3%81%8D%E3%81%A8%E5%A4%A7%E6%A0%B9%E3%81%AE%E5%91%B3%E5%99%8C%E6%B1%81%E3%80%81%E7%8E%84%E7%B1%B3.jpg",
+      "title": "Pork and cabbage stir fry with daikon miso soup and brown rice 回鍋肉もどきと大根の味噌汁、玄米.jpg",
+      "artist": "naotakem",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "stir-shrimp-asparagus": {
+      "file": "stir-shrimp-asparagus",
+      "source": "https://commons.wikimedia.org/wiki/File:Nor_mai_farang_phat_kung.jpg",
+      "title": "Nor mai farang phat kung.jpg",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "stir-shrimp-gourd": {
+      "file": "stir-shrimp-gourd",
+      "source": "https://commons.wikimedia.org/wiki/File:Jilibeng_(chicken_and_shrimp_stir-fry).jpg",
+      "title": "Jilibeng (chicken and shrimp stir-fry).jpg",
+      "artist": "Zheng Zhou",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "stir-shrimp-celery": {
+      "file": "stir-shrimp-celery",
+      "source": "https://commons.wikimedia.org/wiki/File:DSCF1008_A_colorful_stir-fry_of_shrimp_broccoli_cauliflower_carrots_and_mushrooms_in_a_savory_sauce.jpg",
+      "title": "DSCF1008 A colorful stir-fry of shrimp broccoli cauliflower carrots and mushrooms in a savory sauce.jpg",
+      "artist": "PattayaPatrol",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "stir-squid-basil": {
+      "file": "stir-squid-basil",
+      "source": "https://commons.wikimedia.org/wiki/File:DFC_1937_Savory_stir-fried_squid_with_basil_and_chili_served_over_steamed_jasmine_rice.jpg",
+      "title": "DFC 1937 Savory stir-fried squid with basil and chili served over steamed jasmine rice.jpg",
+      "artist": "PattayaPatrol",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "stir-squid-ginger": {
+      "file": "stir-squid-ginger",
+      "source": "https://commons.wikimedia.org/wiki/File:Stir_Fried_Squid_(Taiwan).jpg",
+      "title": "Stir Fried Squid (Taiwan).jpg",
+      "artist": "Ralff Nestor Nacor",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "stir-fish-scallion": {
+      "file": "stir-fish-scallion",
+      "source": "https://commons.wikimedia.org/wiki/File:Ginger_Scallion_Red_Perch_(50-366)_(25058329532).jpg",
+      "title": "Ginger Scallion Red Perch (50-366) (25058329532).jpg",
+      "artist": "Tim Sackton from Somerville, MA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "stir-shrimp-bokchoy": {
+      "file": "stir-shrimp-bokchoy",
+      "source": "https://commons.wikimedia.org/wiki/File:Shrimp_and_baby_bok_choy_(4971706019).jpg",
+      "title": "Shrimp and baby bok choy (4971706019).jpg",
+      "artist": "jeffreyw",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "stir-tofu-miso-eggplant": {
+      "file": "stir-tofu-miso-eggplant",
+      "source": "https://commons.wikimedia.org/wiki/File:Eggplant_with_tofu_01.jpg",
+      "title": "Eggplant with tofu 01.jpg",
+      "artist": "FBenjr123",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "stir-tempeh-broccoli": {
+      "file": "stir-tempeh-broccoli",
+      "source": "https://commons.wikimedia.org/wiki/File:Tempe_Orek.jpg",
+      "title": "Tempe Orek.jpg",
+      "artist": "Indonesiagood",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "stir-tofu-cabbage": {
+      "file": "stir-tofu-cabbage",
+      "source": "https://commons.wikimedia.org/wiki/File:Stir_Fry_with_Tofu.JPG",
+      "title": "Stir Fry with Tofu.JPG",
+      "artist": "ParentingPatch",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "stir-chickpea-spinach": {
+      "file": "stir-chickpea-spinach",
+      "source": "https://commons.wikimedia.org/wiki/File:Spinach-Chickpea_Curry_(3117324894).jpg",
+      "title": "Spinach-Chickpea Curry (3117324894).jpg",
+      "artist": "Kari Sullivan from Austin, TX",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "stir-mushroom-balsamic": {
+      "file": "stir-mushroom-balsamic",
+      "source": "https://commons.wikimedia.org/wiki/File:White_Beans_And_Mushrooms_(140491405).jpeg",
+      "title": "White Beans And Mushrooms (140491405).jpeg",
+      "artist": "J Doll",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    "stir-zucchini-corn": {
+      "file": "stir-zucchini-corn",
+      "source": "https://commons.wikimedia.org/wiki/File:Smoked_and_sauteed_squash_and_zucchini_with_tomatoes.jpg",
+      "title": "Smoked and sauteed squash and zucchini with tomatoes.jpg",
+      "artist": "Wesley Fryer",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "stir-tofu-peanut": {
+      "file": "stir-tofu-peanut",
+      "source": "https://commons.wikimedia.org/wiki/File:Green_Bean_Stir_Fry_(140491597).jpeg",
+      "title": "Green Bean Stir Fry (140491597).jpeg",
+      "artist": "J Doll",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    "stir-blackbean-pepper": {
+      "file": "stir-blackbean-pepper",
+      "source": "https://commons.wikimedia.org/wiki/File:Corn_and_black_bean_salad.jpg",
+      "title": "Corn and black bean salad.jpg",
+      "artist": "Daniel Sone (Photographer)",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    "soup-egg-ribbon-napa": {
+      "file": "soup-egg-ribbon-napa",
+      "source": "https://commons.wikimedia.org/wiki/File:Egg_Drop_Soup_(%E8%9B%8B%E8%8A%B1%E6%B9%AF%EF%BC%89.jpg",
+      "title": "Egg Drop Soup (蛋花湯）.jpg",
+      "artist": "Ralff Nestor Nacor",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "soup-silken-tofu-tomato": {
+      "file": "soup-silken-tofu-tomato",
+      "source": "https://commons.wikimedia.org/wiki/File:Spinach_Tofu_Soup_-_%E8%8F%A0%E8%8F%9C%E8%B1%86%E8%85%90%E6%B9%AF_(Emerald_%26_White_Jade_Soup_-_%E7%BF%A1%E7%BF%A0%E7%99%BD%E7%8E%89%E6%B9%AF).jpg",
+      "title": "Spinach Tofu Soup - 菠菜豆腐湯 (Emerald & White Jade Soup - 翡翠白玉湯).jpg",
+      "artist": "NeoBatfreak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "soup-mushroom-ginger": {
+      "file": "soup-mushroom-ginger",
+      "source": "https://commons.wikimedia.org/wiki/File:JapaneseClearSoup_SuimonoInAutumn.jpg",
+      "title": "JapaneseClearSoup SuimonoInAutumn.jpg",
+      "artist": "サフィル",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "soup-shrimp-zucchini": {
+      "file": "soup-shrimp-zucchini",
+      "source": "https://commons.wikimedia.org/wiki/File:Siam_Garden_Tom_yum_goong_ac.jpg",
+      "title": "Siam Garden Tom yum goong ac.jpg",
+      "artist": "Asturio Cantabrio",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "soup-corn-egg": {
+      "file": "soup-corn-egg",
+      "source": "https://commons.wikimedia.org/wiki/File:Southern_Chinese_style_chicken_soup_with_mushrooms_and_corn.jpg",
+      "title": "Southern Chinese style chicken soup with mushrooms and corn.jpg",
+      "artist": "David",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    "soup-chicken-cabbage": {
+      "file": "soup-chicken-cabbage",
+      "source": "https://commons.wikimedia.org/wiki/File:Steamed_Chinese_Cabbage_in_Chicken_Soup.jpg",
+      "title": "Steamed Chinese Cabbage in Chicken Soup.jpg",
+      "artist": "Pauloleong2002",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "soup-whitebean-tomato": {
+      "file": "soup-whitebean-tomato",
+      "source": "https://commons.wikimedia.org/wiki/File:White_Bean,_Tomato,_and_Rosemary_Soup_(2267968994).jpg",
+      "title": "White Bean, Tomato, and Rosemary Soup (2267968994).jpg",
+      "artist": "Kari Sullivan from Austin, TX",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "soup-pea-yogurt": {
+      "file": "soup-pea-yogurt",
+      "source": "https://commons.wikimedia.org/wiki/File:Spring_pea_soup_with_cr%C3%A8me_fra%C3%AEche_and_bread.jpg",
+      "title": "Spring pea soup with crème fraîche and bread.jpg",
+      "artist": "Sara Goldsmith",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "soup-pumpkin-oats": {
+      "file": "soup-pumpkin-oats",
+      "source": "https://commons.wikimedia.org/wiki/File:Pumpkin_soup_with_seeds_and_croutons_in_Bosnia_and_Herzegovina-bs.jpg",
+      "title": "Pumpkin soup with seeds and croutons in Bosnia and Herzegovina-bs.jpg",
+      "artist": "Minja Klarić",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "soup-carrot-lentils": {
+      "file": "soup-carrot-lentils",
+      "source": "https://commons.wikimedia.org/wiki/File:Lentil_soup_in_a_bowl.jpg",
+      "title": "Lentil soup in a bowl.jpg",
+      "artist": "Dmitry Bagrov",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "soup-chicken-vermicelli": {
+      "file": "soup-chicken-vermicelli",
+      "source": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Chicken_Soup_with_Rice_Noodles.jpg",
+      "title": "Liat Portal for Foodie Disorder - Chicken Soup with Rice Noodles.jpg",
+      "artist": "HaJunkiyada",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "soup-tomato-orzo": {
+      "file": "soup-tomato-orzo",
+      "source": "https://commons.wikimedia.org/wiki/File:02026_Tomato_soup_with_Italian_pasta_on_a_bone_broth_base.jpg",
+      "title": "02026 Tomato soup with Italian pasta on a bone broth base.jpg",
+      "artist": "Marsilar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "soup-broccoli-potato": {
+      "file": "soup-broccoli-potato",
+      "source": "https://commons.wikimedia.org/wiki/File:Vegan_kreme_of_broccoli_soup.jpg",
+      "title": "Vegan kreme of broccoli soup.jpg",
+      "artist": "Vegan Feast Catering",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "soup-tomato-egg": {
+      "file": "soup-tomato-egg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tomato_and_egg_soup.jpg",
+      "title": "Tomato and egg soup.jpg",
+      "artist": "NNU-10-HanRongrong",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    "grill-salmon-zucchini": {
+      "file": "grill-salmon-zucchini",
+      "source": "https://commons.wikimedia.org/wiki/File:Grilled_salmon_and_chips.jpg",
+      "title": "Grilled salmon and chips.jpg",
+      "artist": "Maksym Kozlenko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "grill-chicken-carrot": {
+      "file": "grill-chicken-carrot",
+      "source": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Grilled_chicken_with_rice_and_vegetables.jpg",
+      "title": "Liat Portal for Foodie Disorder - Grilled chicken with rice and vegetables.jpg",
+      "artist": "HaJunkiyada",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "grill-tofu-broccoli": {
+      "file": "grill-tofu-broccoli",
+      "source": "https://commons.wikimedia.org/wiki/File:Grilled_tofu_with_steamed_chard_and_spicy_mango_sauce_(3252903983).jpg",
+      "title": "Grilled tofu with steamed chard and spicy mango sauce (3252903983).jpg",
+      "artist": "Karen and Brad Emerson",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "grill-shrimp-pepper": {
+      "file": "grill-shrimp-pepper",
+      "source": "https://commons.wikimedia.org/wiki/File:Kung_yang.JPG",
+      "title": "Kung yang.JPG",
+      "artist": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "grill-tilapia-tomato": {
+      "file": "grill-tilapia-tomato",
+      "source": "https://commons.wikimedia.org/wiki/File:Grilled_Tilapia_with_salad_and_shito_on_the_side.jpg",
+      "title": "Grilled Tilapia with salad and shito on the side.jpg",
+      "artist": "Maame1Yaa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "grill-eggplant-hummus": {
+      "file": "grill-eggplant-hummus",
+      "source": "https://commons.wikimedia.org/wiki/File:Grilled_eggplant_appetizer.jpg",
+      "title": "Grilled eggplant appetizer.jpg",
+      "artist": "Rick Audet from San Francisco, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "grill-chicken-mushroom": {
+      "file": "grill-chicken-mushroom",
+      "source": "https://commons.wikimedia.org/wiki/File:Delicious_grilled_chicken_served_on_a_bed_of_colorful_vegetables_with_rich_sauce_undefined.jpg",
+      "title": "Delicious grilled chicken served on a bed of colorful vegetables with rich sauce undefined.jpg",
+      "artist": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "grill-corn-zucchini": {
+      "file": "grill-corn-zucchini",
+      "source": "https://commons.wikimedia.org/wiki/File:Grilled_zucchini.jpg",
+      "title": "Grilled zucchini.jpg",
+      "artist": "Jeremy Keith",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "pan-egg-spinach": {
+      "file": "pan-egg-spinach",
+      "source": "https://commons.wikimedia.org/wiki/File:Nargesi_omelette.jpg",
+      "title": "Nargesi omelette.jpg",
+      "artist": "Reza babaeian",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "pan-oat-zucchini": {
+      "file": "pan-oat-zucchini",
+      "source": "https://commons.wikimedia.org/wiki/File:Zucchini_%26_feta_fritters_(7804257920).jpg",
+      "title": "Zucchini & feta fritters (7804257920).jpg",
+      "artist": "Nicole Bratt from Seattle, WA, USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "pan-corn-carrot": {
+      "file": "pan-corn-carrot",
+      "source": "https://commons.wikimedia.org/wiki/File:Pelas_Jagung_in_Bojonegoro.jpg",
+      "title": "Pelas Jagung in Bojonegoro.jpg",
+      "artist": "M.akbar.raf",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "pan-tuna-carrot": {
+      "file": "pan-tuna-carrot",
+      "source": "https://commons.wikimedia.org/wiki/File:Thai-style_Fish_Cakes_-_complimentary_-_Majors_Lane_-_by_Julia.jpg",
+      "title": "Thai-style Fish Cakes - complimentary - Majors Lane - by Julia.jpg",
+      "artist": "avlxyz",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "pan-chickpea-zucchini": {
+      "file": "pan-chickpea-zucchini",
+      "source": "https://commons.wikimedia.org/wiki/File:Curry_chickpea_burgers_(4900258232).jpg",
+      "title": "Curry chickpea burgers (4900258232).jpg",
+      "artist": "Abi Porter",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "pan-potato-pea": {
+      "file": "pan-potato-pea",
+      "source": "https://commons.wikimedia.org/wiki/File:Potato_and_Marinated_Tempeh_Patties,_New_Orleans.jpg",
+      "title": "Potato and Marinated Tempeh Patties, New Orleans.jpg",
+      "artist": "Stephanie",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "pan-egg-tomato": {
+      "file": "pan-egg-tomato",
+      "source": "https://commons.wikimedia.org/wiki/File:Tomato_Omelette1.JPG",
+      "title": "Tomato Omelette1.JPG",
+      "artist": "Paalappoo at English Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    "pan-tofu-breadcrumb": {
+      "file": "pan-tofu-breadcrumb",
+      "source": "https://commons.wikimedia.org/wiki/File:Twice_fried_tofu.jpg",
+      "title": "Twice fried tofu.jpg",
+      "artist": "Wagaung",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "steam-egg-carrot": {
+      "file": "steam-egg-carrot",
+      "source": "https://commons.wikimedia.org/wiki/File:Chawanmushi_-_Traditional_winter_warmer_-_a_small_bowl_of_steamed_egg_custard_with_ingredients_of_the_season_(12274312843).jpg",
+      "title": "Chawanmushi - Traditional winter warmer - a small bowl of steamed egg custard with ingredients of the season (12274312843).jpg",
+      "artist": "City Foodsters",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "steam-fish-napa": {
+      "file": "steam-fish-napa",
+      "source": "https://commons.wikimedia.org/wiki/File:Thai_steamed_fish_with_lime_juice-2.jpg",
+      "title": "Thai steamed fish with lime juice-2.jpg",
+      "artist": "Mattes ( talk ) *derivative work: an-d ( talk )",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    "steam-tofu-mushroom": {
+      "file": "steam-tofu-mushroom",
+      "source": "https://commons.wikimedia.org/wiki/File:Steamed_Tofu_with_fish_meat_with_soy_sauce_from_HAKKA_Cuisine.jpg",
+      "title": "Steamed Tofu with fish meat with soy sauce from HAKKA Cuisine.jpg",
+      "artist": "Peachyeung316",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "steam-shrimp-broccoli": {
+      "file": "steam-shrimp-broccoli",
+      "source": "https://commons.wikimedia.org/wiki/File:NCI_steamed_shrimp.jpg",
+      "title": "NCI steamed shrimp.jpg",
+      "artist": "Wikimedia Commons",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    "steam-pumpkin-yogurt": {
+      "file": "steam-pumpkin-yogurt",
+      "source": "https://commons.wikimedia.org/wiki/File:Kabocha_squash_dish.jpg",
+      "title": "Kabocha squash dish.jpg",
+      "artist": "Sdkb",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "steam-egg-tofu": {
+      "file": "steam-egg-tofu",
+      "source": "https://commons.wikimedia.org/wiki/File:Chawanmushi-01.jpg",
+      "title": "Chawanmushi-01.jpg",
+      "artist": "nyaa_birdies_perch",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "steam-seabass-tomato": {
+      "file": "steam-seabass-tomato",
+      "source": "https://commons.wikimedia.org/wiki/File:CHILEAN_SEA_BASS_with_SUKI_SAUCE_(Spicy)_Steamed_sea_bass_topped_with_our_special_spicy_chili_sauce._Served_on_top_of_steamed_vegetables.jpg",
+      "title": "CHILEAN SEA BASS with SUKI SAUCE (Spicy) Steamed sea bass topped with our special spicy chili sauce. Served on top of steamed vegetables.jpg",
+      "artist": "T.Tseng",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "wrap-chicken-carrot": {
+      "file": "wrap-chicken-carrot",
+      "source": "https://commons.wikimedia.org/wiki/File:Spicy_Chicken_Shawarma_Roll.jpg",
+      "title": "Spicy Chicken Shawarma Roll.jpg",
+      "artist": "Sannidhishetty",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wrap-tuna-cucumber": {
+      "file": "wrap-tuna-cucumber",
+      "source": "https://commons.wikimedia.org/wiki/File:Tuna_wrap,_Delft_(2018).jpg",
+      "title": "Tuna wrap, Delft (2018).jpg",
+      "artist": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International . ( Want to use this image? ) Original publication 📤: -- Donald Trung 『徵國單』 ( No Fake News 💬 ) ( WikiProject Numismatics 💴) ( Articles 📚 ) 00:09, 15 November 2019 (UTC)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wrap-hummus-beet": {
+      "file": "wrap-hummus-beet",
+      "source": "https://commons.wikimedia.org/wiki/File:Veggie_Wrap_(46195383815).jpg",
+      "title": "Veggie Wrap (46195383815).jpg",
+      "artist": "Tony Webster from Minneapolis, Minnesota, United States",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "wrap-egg-spinach": {
+      "file": "wrap-egg-spinach",
+      "source": "https://commons.wikimedia.org/wiki/File:Vegetable_and_Basil-Garlic_Hummus_Wrap_(4800115998).jpg",
+      "title": "Vegetable and Basil-Garlic Hummus Wrap (4800115998).jpg",
+      "artist": "Jennifer from Vancouver, Canada",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "wrap-bean-corn": {
+      "file": "wrap-bean-corn",
+      "source": "https://commons.wikimedia.org/wiki/File:Pinto_Bean_and_Spinach_Burrito_(5034780791).jpg",
+      "title": "Pinto Bean and Spinach Burrito (5034780791).jpg",
+      "artist": "Vegan Feast Catering",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "sandwich-chicken-apple": {
+      "file": "sandwich-chicken-apple",
+      "source": "https://commons.wikimedia.org/wiki/File:Chicken_salad_sandwich.jpg",
+      "title": "Chicken salad sandwich.jpg",
+      "artist": "Fitzhenrymort",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "sandwich-egg-carrot": {
+      "file": "sandwich-egg-carrot",
+      "source": "https://commons.wikimedia.org/wiki/File:Egg_Sandwich.jpg",
+      "title": "Egg Sandwich.jpg",
+      "artist": "David Gossow",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "sandwich-hummus-cucumber": {
+      "file": "sandwich-hummus-cucumber",
+      "source": "https://commons.wikimedia.org/wiki/File:Toasted_tomato,_avocado,_cucumber_and_hummus_sandwich_(4815088397).jpg",
+      "title": "Toasted tomato, avocado, cucumber and hummus sandwich (4815088397).jpg",
+      "artist": "Jennifer from Vancouver, Canada",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "toast-avocado-tomato": {
+      "file": "toast-avocado-tomato",
+      "source": "https://commons.wikimedia.org/wiki/File:Avocado_tomato_toast_-_Kenwood_Restaurant_-_Sarah_Stierch.jpg",
+      "title": "Avocado tomato toast - Kenwood Restaurant - Sarah Stierch.jpg",
+      "artist": "Missvain",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "toast-whitebean-cucumber": {
+      "file": "toast-whitebean-cucumber",
+      "source": "https://commons.wikimedia.org/wiki/File:Fresh_fava,_herbs_and_greens_bruschetta_(14027749514).jpg",
+      "title": "Fresh fava, herbs and greens bruschetta (14027749514).jpg",
+      "artist": "Karen and Brad Emerson",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "toast-egg-tomato": {
+      "file": "toast-egg-tomato",
+      "source": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Scrambled_Eggs_on_Whole_Grain_Toast_with_Yellow_Tomatoes.jpg",
+      "title": "Liat Portal for Foodie Disorder - Scrambled Eggs on Whole Grain Toast with Yellow Tomatoes.jpg",
+      "artist": "HaJunkiyada",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "toast-tuna-corn": {
+      "file": "toast-tuna-corn",
+      "source": "https://commons.wikimedia.org/wiki/File:Tuna_on_Toast_with_Roquette,_Tomato_and_Radish_Salad_(68119914).jpg",
+      "title": "Tuna on Toast with Roquette, Tomato and Radish Salad (68119914).jpg",
+      "artist": "Alpha from Melbourne, Australia",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "yogurt-carrot-apple": {
+      "file": "yogurt-carrot-apple",
+      "source": "https://commons.wikimedia.org/wiki/File:Yogurt,_fruit,_granola_bowl_(34999358091).jpg",
+      "title": "Yogurt, fruit, granola bowl (34999358091).jpg",
+      "artist": "T.Tseng",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "yogurt-pumpkin-banana": {
+      "file": "yogurt-pumpkin-banana",
+      "source": "https://commons.wikimedia.org/wiki/File:Banana_and_yogurt.jpg",
+      "title": "Banana and yogurt.jpg",
+      "artist": "Fatimah Bello",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "yogurt-cucumber-egg": {
+      "file": "yogurt-cucumber-egg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cucumber_pachadi-_My_home_Bangalore_-Karnataka_-pic_08.jpg",
+      "title": "Cucumber pachadi- My home Bangalore -Karnataka -pic 08.jpg",
+      "artist": "Shruthi Gaurav Alva",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "yogurt-beet-pear": {
+      "file": "yogurt-beet-pear",
+      "source": "https://commons.wikimedia.org/wiki/File:GoldBeetPassionfruitYogurtPistachioDill_(8302449930).jpg",
+      "title": "GoldBeetPassionfruitYogurtPistachioDill (8302449930).jpg",
+      "artist": "H. Alexander Talbot",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  }
+}

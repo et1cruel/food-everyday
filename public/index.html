@@ -33,8 +33,9 @@
         <a href="#recipes" class="hero-button">ค้นหาเมนู <span data-icon="arrow"></span></a>
       </div>
       <div class="hero-media">
-        <img src="./images/hero.webp" alt="ต้มยำกุ้งน้ำใสกับเห็ดและสมุนไพรไทยในชามเซรามิก" fetchpriority="high">
+        <img src="./images/hero.webp" alt="ภาพถ่ายต้มยำกุ้งในชามสีน้ำเงิน" fetchpriority="high">
         <a class="hero-caption" href="?recipe=tom-yum-goong"><span>ต้มยำกุ้งน้ำใส <small>อาหารไทย</small></span><span data-icon="arrow"></span></a>
+        <span id="hero-credit" class="hero-credit"></span>
       </div>
     </section>
 
@@ -50,7 +51,10 @@
         <label class="search"><span data-icon="search"></span><span class="sr-only">ค้นชื่อเมนู ประเทศ หรือวัตถุดิบ</span><input id="query" type="search" placeholder="ค้นชื่อเมนู ประเทศ หรือวัตถุดิบ" autocomplete="off"></label>
         <label class="select"><span data-icon="globe"></span><span class="sr-only">ประเทศและภูมิภาค</span><select id="region"><option value="">ทุกประเทศและภูมิภาค</option></select></label>
       </div>
-      <div class="method-list" role="group" aria-label="วิธีปรุง" id="methods"></div>
+      <div class="method-list">
+        <div class="method-buttons" role="group" aria-label="วิธีปรุง" id="methods"></div>
+        <button type="button" id="quick-filter" aria-pressed="false"><span data-icon="clock"></span>ไม่เกิน 20 นาที</button>
+      </div>
       <div class="results-bar"><p id="result-count" role="status"></p><button type="button" id="reset" hidden>ล้างตัวกรอง</button></div>
       <div class="grid" id="recipe-grid"></div>
       <button id="more" type="button" hidden>ดูเมนูเพิ่ม</button>
@@ -60,7 +64,7 @@
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <a href="./" class="logo"><img src="./images/icon.svg" alt="" width="38" height="38"><span>food<span class="brand-accent">everyday.</span></span></a>
-      <p>เกณฑ์เลือกเมนูสุขภาพอิงหลักการกินอาหารหลากหลาย<br><a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO</a> · <a href="https://www.fao.org/nutrition/education/food-dietary-guidelines/regions/thailand/en/">คู่มืออาหารสำหรับคนไทย (FAO)</a> · ภาพประกอบอาหารสร้างด้วย AI</p>
+      <p>เกณฑ์เลือกเมนูสุขภาพอิงหลักการกินอาหารหลากหลาย<br><a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO</a> · <a href="https://www.fao.org/nutrition/education/food-dietary-guidelines/regions/thailand/en/">คู่มืออาหารสำหรับคนไทย (FAO)</a> · เครดิตภาพถ่ายอยู่ในหน้าสูตร</p>
     </div>
   </footer>
   <dialog id="recipe-dialog" aria-labelledby="recipe-title">

@@ -1,4 +1,4 @@
-export const methods = ['ต้ม', 'ผัด', 'ทอด', 'นึ่ง', 'ย่าง/อบ', 'สลัด/ยำ'];
+export const methods = ['ต้ม', 'ผัด', 'ทอด', 'นึ่ง', 'ย่าง/อบ', 'สลัด/ยำ', 'ประกอบ'];
 
 export const sources = {
   liang: ['สถาบันโภชนาการ มหิดล · แกงเลียง', 'https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/%E0%B9%81%E0%B8%81%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B8%87.html'],
