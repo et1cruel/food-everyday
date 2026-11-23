@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
-import { readFile, readdir } from 'node:fs/promises';
-import { illustrated, methods, normalize, parseRecipes, sources } from '../public/recipes.js';
+import { readFile } from 'node:fs/promises';
+import { methods, normalize, parseRecipes, sources } from '../public/recipes.js';
 
 const text = await readFile(new URL('../public/recipes.txt', import.meta.url), 'utf8');
 const recipes = parseRecipes(text);
@@ -26,9 +26,11 @@ for (const recipe of recipes) {
   }
 }
 
-const images = await readdir(new URL('../public/images', import.meta.url));
-assert.ok(images.includes('hero.webp'));
-for (const id of illustrated) assert.ok(ids.has(id) && images.includes(id + '.webp'), id);
+await Promise.all(['hero', ...ids].map(async id => {
+  const image = await readFile(new URL('../public/images/' + id + '.webp', import.meta.url));
+  assert.equal(image.toString('ascii', 0, 4), 'RIFF', id);
+  assert.equal(image.toString('ascii', 8, 12), 'WEBP', id);
+}));
 for (const [method, count] of counts) assert.ok(count > 0, method);
 const healthy = recipes.filter(recipe => recipe.healthy);
 assert.ok(healthy.length > 0 && healthy.length < recipes.length);

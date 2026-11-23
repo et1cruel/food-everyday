@@ -34,12 +34,6 @@ export const sources = {
   borscht: ['UNESCO · วัฒนธรรมการทำบอร์ชต์ยูเครน', 'https://ich.unesco.org/en/RL/-01852'],
 };
 
-export const illustrated = new Set([
-  'tom-yum-goong', 'nam-prik-ong', 'bibimbap', 'pla-neung-manao', 'som-tam', 'miso-soup',
-  'pho-ga', 'gazpacho', 'masoor-dal', 'black-bean-tacos', 'tod-mun', 'khao-soi',
-  'gaeng-liang', 'gaeng-jued-tofu', 'khao-tom-pla', 'gaeng-hed-isan', 'miyeokguk', 'harira',
-]);
-
 export function normalize(text) {
   return text.normalize('NFKD').replace(/\p{Script=Latin}\p{M}+/gu, letter => letter[0]).toLowerCase();
 }

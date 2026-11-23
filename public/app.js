@@ -1,4 +1,4 @@
-import { parseRecipes, normalize, illustrated, methods, sources } from './recipes.js';
+import { parseRecipes, normalize, methods, sources } from './recipes.js';
 
 const icons = {
   leaf: '<path d="M20 4c-6 0-12 2-12 9a4 4 0 0 0 4 4c7 0 8-7 8-13Z M4 21l10-10"/>',
@@ -8,16 +8,8 @@ const icons = {
   bookmark: '<path d="M6 5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16l-6-4-6 4Z"/>',
   clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
   x: '<path d="m6 6 12 12M18 6 6 18"/>',
-  pot: '<path d="M4 10h16v6a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-6ZM2 10h20M9 6h6m-3 0V4"/>',
-  pan: '<path d="M3 11h14v2a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5v-2Zm14 0 5-3M8 8l1-2m4 2 1-2"/>',
-  steam: '<path d="M3 13h18l-2 4a3 3 0 0 1-3 2H8a3 3 0 0 1-3-2l-2-4ZM8 10c-2-2 2-3 0-5m4 5c-2-2 2-3 0-5m4 5c-2-2 2-3 0-5"/>',
-  oven: '<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16M7 7h1m3 0h1M8 12h8v5H8z"/>',
-  bowl: '<path d="M3 13h18a8 8 0 0 1-8 7h-2a8 8 0 0 1-8-7Zm6 0c0-5 3-8 8-8 0 4-2 7-5 8m-3 0C6 12 5 9 5 7c4 0 6 2 6 5"/>',
 };
 
-const methodIcons = {
-  ต้ม: 'pot', ผัด: 'pan', ทอด: 'pan', นึ่ง: 'steam', 'ย่าง/อบ': 'oven', 'สลัด/ยำ': 'bowl',
-};
 const $ = selector => document.querySelector(selector);
 const icon = name => '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">' + icons[name] + '</svg>';
 const escape = value => String(value).replace(/[&<>"']/g, char => ({
@@ -60,13 +52,11 @@ function bookmark(recipe) {
 }
 
 function media(recipe, detailView = false) {
-  if (illustrated.has(recipe.id)) {
-    const cssClass = detailView ? 'detail-image' : 'card-media';
-    const alt = detailView ? 'ภาพประกอบ ' + recipe.name : '';
-    return '<img class="' + cssClass + '" src="./images/' + recipe.id + '.webp" alt="' + escape(alt) + '" loading="lazy">';
-  }
-  if (detailView) return '';
-  return '<span class="cover" data-method="' + recipe.method + '" aria-hidden="true">' + icon(methodIcons[recipe.method]) + '</span>';
+  const cssClass = detailView ? 'detail-image' : 'card-media';
+  const alt = detailView ? 'ภาพประกอบ ' + recipe.name : '';
+  const loading = detailView ? 'eager' : 'lazy';
+  return '<img class="' + cssClass + '" src="./images/' + recipe.id + '.webp" alt="' + escape(alt) +
+    '" loading="' + loading + '" decoding="async">';
 }
 
 function card(recipe) {
