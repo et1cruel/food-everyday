@@ -68,8 +68,9 @@ function photoCredit(id, compact = false) {
   const photo = photoCredits.files[photoCredits.recipes[id]];
   const link = (href, label) => '<a href="' + escape(href) + '" target="_blank" rel="noopener noreferrer">' + escape(label) + '</a>';
   const license = photo.licenseUrl ? link(photo.licenseUrl, photo.license) : escape(photo.license);
-  const credit = compact ? link(photo.source, photo.artist) : link(photo.source, photo.title) + ' · ' + escape(photo.artist);
-  return credit + ' · ' + license + ' · ปรับขนาดและครอปเพื่อแสดงผล';
+  const artist = photo.creditUrl ? link(photo.creditUrl, photo.artist) : escape(photo.artist);
+  const credit = compact ? link(photo.source, photo.artist) : link(photo.source, photo.title) + ' · ' + artist;
+  return credit + ' · ' + license + (compact ? ' · ครอปภาพ' : ' · ปรับขนาดและครอปเพื่อแสดงผล');
 }
 
 function card(recipe) {

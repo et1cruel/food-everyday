@@ -32,6 +32,7 @@ assert.equal(Object.keys(credits.recipes).length, ids.size);
 for (const credit of Object.values(credits.files)) {
   assert.match(credit.file, /^[a-z0-9]+(?:-[a-z0-9]+)*$/u);
   assert.equal(new URL(credit.source).hostname, 'commons.wikimedia.org');
+  if (credit.creditUrl) assert.equal(new URL(credit.creditUrl).protocol, 'https:');
   assert.ok(credit.artist && credit.license && credit.title);
 }
 await Promise.all(['hero', ...Object.values(credits.files).map(photo => photo.file)].map(async id => {
