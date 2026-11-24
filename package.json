@@ -4,6 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dist",
     "test": "node scripts/check.mjs"
   }
 }

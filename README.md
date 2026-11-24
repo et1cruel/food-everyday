@@ -14,6 +14,10 @@ npm test
 npm run dev
 ```
 
+รัน `npm run build` แล้วใช้ `npm run preview` เมื่อต้องการทดสอบหน้าสูตรที่แชร์ได้และ sitemap
+
+วัตถุดิบในครัว รายการโปรด แผนมื้อ และสถานะรายการซื้อของเก็บในเบราว์เซอร์ที่ใช้เปิดเว็บ
+
 ## แก้ไขสูตร
 
 เพิ่มหรือแก้ข้อมูลใน `public/recipes.txt` หนึ่งบรรทัดต่อสูตร คั่นคอลัมน์ด้วย `|` ตามลำดับ id ชื่อไทย ชื่อสากล ประเทศหรือภูมิภาค วิธีปรุง นาที ธงคัดเป็นเมนูสุขภาพ (1 หรือ 0) วัตถุดิบ ขั้นตอน เคล็ดลับ เรื่องราว และรหัสแหล่งอ้างอิง คั่นวัตถุดิบและขั้นตอนด้วยเครื่องหมายอัฒภาค กำหนดรหัสแหล่งอ้างอิงใน `public/recipes.js` และเพิ่มภาพ WebP พร้อมเครดิตใน `public/photo-credits.json` ให้ตรงกับ id ของสูตร
@@ -22,8 +26,9 @@ npm run dev
 
 ## เผยแพร่
 
-Cloudflare Pages ใช้ Direct Upload จากโฟลเดอร์ `public` เข้าบัญชีที่ดูแลโปรเจกต์ก่อน จากนั้นรัน
+Cloudflare Pages ใช้ Direct Upload จากโฟลเดอร์ `dist` โดยชุด build จะรวมไฟล์ใน `public` หน้าสูตร HTML และ sitemap
 
 ```sh
-npx wrangler pages deploy public --project-name food-everyday --branch main
+npm run build
+npx wrangler pages deploy dist --project-name food-everyday --branch main
 ```

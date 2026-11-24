@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f6ef">
   <meta name="description" content="คลังสูตรอาหารไทยและทั่วโลก เริ่มจากเมนูสุขภาพ ค้นตามวัตถุดิบ พร้อมวิธีทำและเรื่องราวของแต่ละจาน">
+  <link rel="canonical" href="https://food-everyday.pages.dev/">
   <title>FOOD EVERYDAY | เมนูสุขภาพและสูตรอาหารทั่วโลก</title>
   <link rel="icon" href="./images/icon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +21,7 @@
       <a href="./" class="logo"><img src="./images/icon.svg" alt="" width="38" height="38"><span>food<span class="brand-accent">everyday.</span></span></a>
       <nav aria-label="เมนูหลัก">
         <a class="nav-link" href="#recipes">ค้นหาสูตร</a>
+        <a class="plan-nav" href="#plan">แผนมื้อ</a>
         <button class="saved-nav" type="button" aria-pressed="false"><span data-icon="bookmark"></span><span>รายการโปรด</span><span id="saved-count" hidden></span></button>
       </nav>
     </div>
@@ -30,7 +32,7 @@
         <span class="hero-label"><span data-icon="leaf"></span> สูตรจากไทยและทั่วโลก</span>
         <h1 id="hero-title">วันนี้กินอะไร<span>ดี?</span></h1>
         <p>เลือกมื้อที่อยากกินจากสูตรทำเองที่บ้าน เริ่มจากเมนูสุขภาพ พร้อมวัตถุดิบ วิธีทำ และเรื่องราวของแต่ละจาน</p>
-        <a href="#recipes" class="hero-button">ค้นหาเมนู <span data-icon="arrow"></span></a>
+        <div class="hero-actions"><a href="#recipes" class="hero-button">ค้นหาเมนู <span data-icon="arrow"></span></a><a href="#pantry-panel" id="pantry-shortcut">ใช้ของในครัว</a></div>
       </div>
       <div class="hero-media">
         <img src="./images/hero.webp" alt="ภาพถ่ายต้มยำกุ้งกับเห็ดฟางในชามสีขาว" fetchpriority="high">
@@ -56,10 +58,41 @@
         <button type="button" id="quick-filter" aria-pressed="false"><span data-icon="clock"></span>ไม่เกิน 20 นาที</button>
         <button type="button" id="home-collection" aria-pressed="false">สูตรใหม่ 350 เมนู</button>
       </div>
+      <details class="pantry" id="pantry-panel">
+        <summary>ของที่มีในครัว <span id="pantry-count" hidden></span></summary>
+        <p>เลือกวัตถุดิบที่มี เพื่อเรียงสูตรที่ใช้ของเหล่านั้นก่อน</p>
+        <div id="pantry-options" class="pantry-options" role="group" aria-label="เลือกวัตถุดิบ"></div>
+        <div class="actions">
+          <button id="pantry-toggle" class="action" type="button" aria-pressed="false" disabled>กรองด้วยของที่เลือก</button>
+          <button id="pantry-clear" class="text-action" type="button" hidden>ล้างของที่เลือก</button>
+        </div>
+      </details>
       <div class="results-bar"><p id="result-count" role="status"></p><button type="button" id="reset" hidden>ล้างตัวกรอง</button></div>
       <div class="grid" id="recipe-grid"></div>
       <button id="more" type="button" hidden>ดูเมนูเพิ่ม</button>
       <noscript>เปิด JavaScript เพื่อค้นหาและอ่านสูตรอาหาร</noscript>
+    </section>
+    <section class="wrap plan" id="plan" aria-labelledby="plan-title">
+      <div class="section-heading">
+        <div><h2 id="plan-title" tabindex="-1">แผนมื้อประจำสัปดาห์</h2><p>เลือก “เพิ่มลงแผนมื้อ” จากหน้าสูตร แผนจะเก็บในเบราว์เซอร์นี้</p></div>
+        <a class="action" href="#recipes">เลือกสูตรอาหาร</a>
+      </div>
+      <div class="week-controls">
+        <button class="action" type="button" data-week="-7" aria-label="สัปดาห์ก่อน">‹</button>
+        <p id="plan-range" aria-live="polite"></p>
+        <button class="action" type="button" data-week="7" aria-label="สัปดาห์ถัดไป">›</button>
+        <button class="text-action" type="button" data-week="today">กลับมาสัปดาห์นี้</button>
+      </div>
+      <div id="plan-days" class="plan-days"></div>
+      <section class="shopping" aria-labelledby="shopping-title">
+        <div class="section-heading">
+          <div><h3 id="shopping-title">รายการซื้อของ</h3><p>รวมตามมื้อและจำนวนที่ในสัปดาห์ที่เลือก ติ๊กของที่มีแล้วได้</p></div>
+          <button id="copy-shopping" class="action" type="button" disabled>คัดลอกรายการที่ยังขาด</button>
+        </div>
+        <ul id="shopping-list"></ul>
+        <p id="shopping-status" class="feedback"></p>
+        <label id="shopping-copy-fallback" hidden>เลือกรายการเพื่อคัดลอก<textarea readonly rows="4"></textarea></label>
+      </section>
     </section>
   </main>
   <footer class="site-footer">
@@ -72,5 +105,6 @@
     <div class="dialog-toolbar"><button id="close-recipe" class="icon-button" type="button" aria-label="ปิดสูตรอาหาร"><span data-icon="x"></span></button></div>
     <div id="recipe-detail"></div>
   </dialog>
+  <div class="sr-only" id="site-status" role="status"></div>
 </body>
 </html>

@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { methods, normalize, parseRecipes, sources, homeCollection } from '../public/recipes.js';
+import { isDay, pantryMatches, scaleIngredient, shiftDay, shoppingList, todayInBangkok, weekStart } from '../public/kitchen.js';
 
 const text = await readFile(new URL('../public/recipes.txt', import.meta.url), 'utf8');
 const credits = JSON.parse(await readFile(new URL('../public/photo-credits.json', import.meta.url), 'utf8'));
@@ -50,5 +51,21 @@ const healthy = recipes.filter(recipe => recipe.healthy);
 assert.ok(healthy.length > 0 && healthy.length < recipes.length);
 assert.ok(recipes.find(recipe => recipe.id === 'tom-yum-goong').search.includes(normalize('น้ำปลา')));
 assert.ok(recipes.find(recipe => recipe.id === 'goi-cuon').search.includes(normalize('แตงกวา')));
+assert.deepEqual([...pantryMatches(['อกไก่ 220 กรัม','มะเขือเทศเชอร์รี 180 กรัม','ไข่ต้มสุก 2 ฟอง'])],['egg','chicken','tomato']);
+assert.equal(pantryMatches(['น้ำซุปไก่ 1 ถ้วย','น้ำมันข้าวโพด 1 ช้อนชา','เต้าหู้ไข่ 1 หลอด','ปลาหมึก 200 กรัม']).size,1);
+assert.equal(scaleIngredient('น้ำปลา 1 1/2 ช้อนชา',3),'น้ำปลา 2 1/4 ช้อนชา');
+assert.equal(scaleIngredient('หอมแดง 1–2 หัว',4),'หอมแดง 2–4 หัว');
+assert.equal(scaleIngredient('น้ำ ๘๐ มล.',3),'น้ำ 120 มล.');
+assert.equal(scaleIngredient('แซลมอนแล่ 2 ชิ้น รวม 230 กรัม',3),'แซลมอนแล่ 2 ชิ้น รวม 230 กรัม');
+assert.equal(scaleIngredient('พริก ตามชอบ',4),'พริก ตามชอบ');
+const merged = shoppingList([{recipeId:'a',servings:4},{recipeId:'b',servings:1}],new Map([
+  ['a',{ingredients:['แครอต 60 กรัม','น้ำ 100 มล.','เกลือตามชอบ']}],
+  ['b',{ingredients:['แครอต 80 กรัม','แครอต 1 หัว','น้ำ 60 มิลลิลิตร','เกลือตามชอบ']}],
+]));
+assert.deepEqual(new Set(merged.map(item=>item.text)),new Set(['แครอต 160 กรัม','แครอต 1/2 หัว','น้ำ 230 มล.','เกลือตามชอบ']));
+assert.equal(todayInBangkok(new Date('2026-11-23T18:00:00Z')),'2026-11-24');
+assert.equal(weekStart('2026-11-29'),'2026-11-23');
+assert.equal(shiftDay('2026-12-28',7),'2027-01-04');
+assert.equal(isDay('2026-02-29'),false);
 console.log(recipes.length + ' recipes, ' + healthy.length + ' healthy picks, ' + countries.size +
   ' countries or regions, ' + methods.length + ' cooking categories');
